@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html class='h-100' data-bs-theme='light' lang='ru'>
+<head>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='IE=Edge' http-equiv='X-UA-Compatible'>
+<meta charset="utf-8">
+<title>Агрегация данных</title>
+<link rel="alternate" href="https://ru.hexlet.io/courses/js-basics/lessons/aggregation/exercise_unit" hreflang="ru-RU">
+<link rel="alternate" href="https://kz.hexlet.io/courses/js-basics/lessons/aggregation/exercise_unit" hreflang="ru-KZ">
+<link rel="image_src" href="https://cdn2.hexlet.io/assets/hexlet_ru_logo_wide-12d06b61221b864d97bf68d202fa59393019b742a95cd5388821c18d2240df69.png">
+<meta property="og:site_name" content="Хекслет">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn2.hexlet.io/assets/hexlet_ru_logo_wide-12d06b61221b864d97bf68d202fa59393019b742a95cd5388821c18d2240df69.png">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="l_u1_jXj6KE5N9k0DOF80Cx5KBl4D74LmHasEfD7ENNmslQIz22T11OuIeK1iV9mRI-mR3MbgAaWR028t3RfMg" />
+
+<link crossorigin='use-credentials' href='/manifest.json' rel='manifest'>
+<link rel="icon" type="image/x-icon" href="https://cdn2.hexlet.io/assets/favicon_ru-924f722c2289a1cd80a7fca957588ad4f75e68c96f20cd37dacb6b8a447eb836.ico" sizes="32x32" />
+<link rel="icon" type="image/svg+xml" href="https://cdn2.hexlet.io/assets/icon_ru-721dba95bff112a0b63c939b053ba82e1e53f0205d3c045ed428f1935daf0920.svg" />
+<link rel="apple-touch-icon" type="image/x-icon" href="https://cdn2.hexlet.io/assets/apple-touch-icon_ru-5ac2554d7f3856089a0babcf2dce22a07b53796e0646fb9bfc1f3e360fad7458.png" />
+
+<meta content='b9d3902d34' name='verify-admitad'>
+
+<meta content='aa2vrdtq64dub8knuf83lwywit311w' name='facebook-domain-verification'>
+
+
+<link rel="stylesheet" href="https://cdn2.hexlet.io/assets/application-5d1f63fb7236299f6260b916c59924007bd48b21f1b688ed633fc819bcfdad75.css" media="all" />
+<link rel="stylesheet" href="https://cdn2.hexlet.io/assets/community-d5f0156ffe6745c98cfa05cfdf944f19fda9245bf5408d4f0edea84f055c75ff.css" media="all" />
+<link rel="stylesheet" href="https://cdn2.hexlet.io/assets/bootstrap_icons-a734be150d96c79929f4b03d1e5631541b345f9a61fa3df264264e9436f7171d.css" media="all" />
+<script>
+//<![CDATA[
+window.gon={};gon.fired_events={};gon.vkontakte_id="51586979";gon.is_bot=false;gon.applications={"challenge":true};gon.current_user={"id":546657,"email":"kers_play@mail.ru","sanitized_phone_number":"","username":"user-a6b3ea5a10c5fc73","created_at":"2022-11-11T16:21:07.035+05:00","last_viewed_notification_id":null,"paid_days_count":0,"first_name":null,"last_name":null,"full_name":"user-a6b3ea5a10c5fc73","birthday":null,"city":null,"country":null,"text":"kers_play@mail.ru (user-a6b3ea5a10c5fc73)","is_guest":false,"is_mentor":false,"is_tutor":false,"is_hexlet_employee":false,"current_company":null,"can_use_paid_features":false,"current_program":null,"is_active_group_member":false,"is_active_async_group_member":false,"current_group_type":null,"current_curator":{"email":null,"full_name":null},"current_tutor":{"full_name":null},"last_event_data":{"id":28111047,"name":null,"resource_type":"Lesson::Member::Unit","resource_id":36314925,"created_at":"2024-04-10T17:45:15.223+05:00","updated_at":"2024-04-10T17:45:15.223+05:00","action":null,"event_type_id":null,"locale":"ru","kind_id":73,"perform_at":"2024-04-10T17:45:15.222+05:00","creator_id":546657},"url":"https://hexlet.io/u/user-a6b3ea5a10c5fc73"};gon.token="doAxPTcBKWcoq-XuUcV2z9iE0Y63662fuJ2raaDk_YaHydDLzY9SEUIyHTjorVV5sHJf0Lz_k5K2rErE52uyZw";gon.events=["ambassador_created","ambassador_updated","added_to_group","blog_post_moderation_submitted","custom_payment_paid","team_created","content_course_finished","course_started","course_finished","lead_created","lesson_started","lesson_finished","test_event","product_payment_paid","program_finished","project_check_point_finished","project_finished","project_member_review_accepted","project_member_review_approved","project_member_review_declined","project_member_review_rejected","project_sent_to_review","project_started","program_started","show_lead_modal","sign_up_failed","signed_up","signed_up_program_started","signed_in","solution_viewed","subscription_cancelled","subscription_created","subscription_deleted","subscription_paid","subscription_price_changed","subscription_product_changed","team_balance_recounted","topic_assigned","topic_created","topic_comment_created","tutor_assigned","tutorship_application_created","user_email_changed","email_confirmed","user_stucked_in_group","send_to_work_chat"];gon.disqus_name="hexletio";gon.locale="ru";gon.language="ru";gon.rails_env="production";gon.mobile=false;gon.google={"analytics_key":"UA-1360700-51","optimize_key":"GTM-5QDVFPF"};gon.recaptcha={"site_key_v3":"6LenGbgZAAAAAM7HbrDbn5JlizCSzPcS767c9vaY"};gon.social_signin=false;gon.typoreporter_google_form_id="1FAIpQLSeibfGq-KvWQ2Fyru-zkFFRVTLBuzXAHAoEyN1p49FtDmNoNA";gon.notifications=[];gon.lesson={"id":2640,"slug":"aggregation"};gon.course={"slug":"js-basics"};gon.topics=[{"id":98257,"title":"все задачи решались без проблем, но с этой вожусь уже третий день, жесть какая то","creator":{"id":784968,"public_name":"Павел","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/user-be01b28837ec1da1","has_received_mentor_response_at_least_once":true,"additional_info":{}},"communitable":{"id":2640,"slug":"aggregation","name":"Агрегация данных","location":"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit","link":"\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics\"\u003eКурс «Основы JavaScript»\u003c/a\u003e\u003cbr\u003e\u0026#8627; Урок «\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit\"\u003eАгрегация данных\u003c/a\u003e» "},"created_at":"14 марта 2024","location":"/topics/98257","has_solutions":null,"can_show_mentor_info":false,"state":"active","mentorship_state":"closed","can_destroy":false,"can_like":true,"can_update":false,"can_subscribe":true,"kind":"community","likes":[],"comments":[{"id":189425,"body":"Убедитесь, что все переменные объявлены и что результат включает все числа от начального до конечного включительно. Если не помогает, сформулируйте, в чём проблема.","creator":{"id":773159,"public_name":"Максим Богомолов","is_removed":false,"is_mentor":false,"can_use_paid_features":true,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/fiftinmen","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"14 марта 2024","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]}],"useful":false,"commenting_disabled":true,"subscribers":[{"id":200847,"user_id":784968},{"id":200875,"user_id":773159}],"mentor":{"id":79,"user_id":198906,"full_name":"Maxim Litvinov","username":"malcom"}},{"id":97758,"title":"Не могу понять, почему выводит такое значение, помогите пожалуйста \nhttps://ru.hexlet.io/code_reviews/1343213","creator":{"id":743643,"public_name":"Илья  Улыбышев","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/ilja941","has_received_mentor_response_at_least_once":false,"additional_info":{}},"communitable":{"id":2640,"slug":"aggregation","name":"Агрегация данных","location":"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit","link":"\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics\"\u003eКурс «Основы JavaScript»\u003c/a\u003e\u003cbr\u003e\u0026#8627; Урок «\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit\"\u003eАгрегация данных\u003c/a\u003e» "},"created_at":"27 февраля 2024","location":"/topics/97758","has_solutions":true,"can_show_mentor_info":true,"state":"active","mentorship_state":"closed","can_destroy":false,"can_like":true,"can_update":false,"can_subscribe":true,"kind":"question","likes":[],"comments":[{"id":188758,"body":"В вашем решении функция конкатенирует значение из первого аргумента количество раз, указанное во втором аргументе.\n\nНо задание другое. Первый аргумент - это начало числового диапазона, второй - конец. Надо сделать конкатенацию всех чисел из этого диапазона.\n\nНапример:\n`joinNumbersFromRange(3, 6)` - \nэто диапазон от 3 до 6, т.е. - 3, 4, 5, 6. Соответственно результат такой - **'3456'**\n\n`joinNumbersFromRange(2, 2)` - это диапазон только из одного числа 2. Тогда результат - **'2'**.\n","creator":{"id":722197,"public_name":"Виктор Дорохов","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/viktor_dorokhov","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"27 февраля 2024","solution":true,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]}],"useful":false,"commenting_disabled":true,"subscribers":[{"id":199942,"user_id":743643},{"id":199943,"user_id":722197}],"mentor":{"id":79,"user_id":198906,"full_name":"Maxim Litvinov","username":"malcom"}},{"id":95923,"title":"Что то не так, помогите разобраться https://ru.hexlet.io/code_reviews/1271946#","creator":{"id":719219,"public_name":"Антон Данилов","is_removed":false,"is_mentor":false,"can_use_paid_features":true,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/anton_danilov","has_received_mentor_response_at_least_once":true,"additional_info":{}},"communitable":{"id":2640,"slug":"aggregation","name":"Агрегация данных","location":"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit","link":"\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics\"\u003eКурс «Основы JavaScript»\u003c/a\u003e\u003cbr\u003e\u0026#8627; Урок «\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit\"\u003eАгрегация данных\u003c/a\u003e» "},"created_at":"03 января 2024","location":"/topics/95923","has_solutions":true,"can_show_mentor_info":true,"state":"active","mentorship_state":"closed","can_destroy":false,"can_like":true,"can_update":false,"can_subscribe":true,"kind":"question","likes":[],"comments":[{"id":186664,"body":"Попробуйте вывести в консоль промежуточные результаты выполнения цикла. \nСейчас вы в строку добавляете каждый раз одно то же начальное значение, не изменяя его.","creator":{"id":442284,"public_name":"Полина Карна","is_removed":false,"is_mentor":false,"can_use_paid_features":true,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/designer","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"05 января 2024","solution":true,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]}],"useful":false,"commenting_disabled":true,"subscribers":[{"id":196707,"user_id":719219},{"id":196791,"user_id":442284}],"mentor":{"id":98,"user_id":364375,"full_name":"Olga Pezhenkova","username":"olala"}},{"id":95669,"title":"Что то не понятно как это работает,что куда добавляется,понаписали много а что не известно. ","creator":{"id":629872,"public_name":"user-8ebaf3571879e126","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/user-8ebaf3571879e126","has_received_mentor_response_at_least_once":true,"additional_info":{}},"communitable":{"id":2640,"slug":"aggregation","name":"Агрегация данных","location":"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit","link":"\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics\"\u003eКурс «Основы JavaScript»\u003c/a\u003e\u003cbr\u003e\u0026#8627; Урок «\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit\"\u003eАгрегация данных\u003c/a\u003e» "},"created_at":"22 декабря 2023","location":"/topics/95669","has_solutions":null,"can_show_mentor_info":false,"state":"active","mentorship_state":"closed","can_destroy":false,"can_like":true,"can_update":false,"can_subscribe":true,"kind":"question","likes":[],"comments":[{"id":186421,"body":"Добрый день.\n\nНепонятно, что вам непонятно. Но могу порекомендовать нашу [статью](https://help.hexlet.io/ru/articles/111475-kak-ustroeny-kursy-na-khekslete) в хелпе","creator":{"id":104929,"public_name":"Nikolai Gagarinov","is_removed":false,"is_mentor":true,"can_use_paid_features":true,"is_tutor":true,"public_profile_enabled":null,"public_profile_url":"/u/feycot","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"25 декабря 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]}],"useful":false,"commenting_disabled":true,"subscribers":[{"id":196231,"user_id":629872},{"id":196381,"user_id":104929}],"mentor":{"id":82,"user_id":104929,"full_name":"Nikolay Gagarinov","username":"feycot"}},{"id":94611,"title":"а вместо...  result = `${result}${i}`;      можно ли записать...   result += i;  вроде получше..?  ","creator":{"id":570506,"public_name":"Alexander_silkov _","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/alex_","has_received_mentor_response_at_least_once":true,"additional_info":{}},"communitable":{"id":2640,"slug":"aggregation","name":"Агрегация данных","location":"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit","link":"\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics\"\u003eКурс «Основы JavaScript»\u003c/a\u003e\u003cbr\u003e\u0026#8627; Урок «\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit\"\u003eАгрегация данных\u003c/a\u003e» "},"created_at":"22 ноября 2023","location":"/topics/94611","has_solutions":null,"can_show_mentor_info":true,"state":"active","mentorship_state":"closed","can_destroy":false,"can_like":true,"can_update":false,"can_subscribe":true,"kind":"question","likes":[{"id":30745,"user_id":674436,"topic_id":94611}],"comments":[{"id":185073,"body":"**Alexander_silkov _**, здравствуйте. Запись в уроке явно указывает, что формируется строка с помощью интерполяции. Если использовать оператор `+`, то возникает двусмысленность, так как с числами это будет работать иначе.\n\nНе забывайте про наставника в группе. Вы можете разбирать с ним подобные вопросы. С ним это делать лучше, так как могут быть различные подводные камни, и тема может быть гораздо шире, чем вам кажется. Наставнику вы можете задавать уточняющие вопросы, и он может посоветовать что изучить и куда двигаться, чтобы лучше разобрать тему. Плюс наставники проводят разные активности, вы можете предлагать темы для активностей.","creator":{"id":75907,"public_name":"Ivan Gagarinov","is_removed":false,"is_mentor":true,"can_use_paid_features":true,"is_tutor":true,"public_profile_enabled":null,"public_profile_url":"/u/dzencot","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"23 ноября 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[{"id":52036,"user_id":674436,"comment_id":185073}]}],"useful":false,"commenting_disabled":true,"subscribers":[{"id":194386,"user_id":570506},{"id":194435,"user_id":75907}],"mentor":{"id":86,"user_id":75907,"full_name":"Ivan Gagarinov","username":"dzencot"}},{"id":93941,"title":"Здравствуйте! Подскажите пожалуйста как сделать, чтобы последний символ не прибавлялся к строке, если он такой же как первый? Сделала условие \"\u003c\" - не пойму почему прибавляется все равно.. Если я верно поняла, ошибка именно в этом \nhttps://ru.hexlet.io/code_reviews/1202473","creator":{"id":714305,"public_name":"Елена Самосудова","is_removed":false,"is_mentor":false,"can_use_paid_features":true,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/elenasamosudova","has_received_mentor_response_at_least_once":true,"additional_info":{}},"communitable":{"id":2640,"slug":"aggregation","name":"Агрегация данных","location":"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit","link":"\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics\"\u003eКурс «Основы JavaScript»\u003c/a\u003e\u003cbr\u003e\u0026#8627; Урок «\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit\"\u003eАгрегация данных\u003c/a\u003e» "},"created_at":"31 октября 2023","location":"/topics/93941","has_solutions":null,"can_show_mentor_info":false,"state":"active","mentorship_state":"closed","can_destroy":false,"can_like":true,"can_update":false,"can_subscribe":true,"kind":"community","likes":[],"comments":[{"id":184179,"body":"**Елена**, Добрый, попробуйте строчку i = i + 1; перенести ниже result","creator":{"id":716061,"public_name":"Виталий Синишин","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/vitas_72","has_received_mentor_response_at_least_once":false,"additional_info":{}},"created_at":"01 ноября 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]},{"id":184180,"body":"Это я пробовала, не сработало. Получилось, когда задала переменной другое значение и в result вывела result, а не start.","creator":{"id":714305,"public_name":"Елена Самосудова","is_removed":false,"is_mentor":false,"can_use_paid_features":true,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/elenasamosudova","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"01 ноября 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]}],"useful":false,"commenting_disabled":true,"subscribers":[{"id":193147,"user_id":714305},{"id":193171,"user_id":716061}],"mentor":{"id":79,"user_id":198906,"full_name":"Maxim Litvinov","username":"malcom"}},{"id":93510,"title":"Добрый день! Подскажите, пожалуйста, почему фейлится тест? Возвращает undefined при одинаковых аргументах. Запускал отдельно в replit, функция возвращает правильный результат. \n\nhttps://ru.hexlet.io/code_reviews/1182851","creator":{"id":473059,"public_name":"Алексей Назаренко","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/nzrnk","has_received_mentor_response_at_least_once":false,"additional_info":{}},"communitable":{"id":2640,"slug":"aggregation","name":"Агрегация данных","location":"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit","link":"\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics\"\u003eКурс «Основы JavaScript»\u003c/a\u003e\u003cbr\u003e\u0026#8627; Урок «\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit\"\u003eАгрегация данных\u003c/a\u003e» "},"created_at":"16 октября 2023","location":"/topics/93510","has_solutions":true,"can_show_mentor_info":false,"state":"active","mentorship_state":"closed","can_destroy":false,"can_like":true,"can_update":false,"can_subscribe":true,"kind":"question","likes":[],"comments":[{"id":183595,"body":"Вы `return` из функции не сделали, просто `console.log`","creator":{"id":117652,"public_name":"Дарина Киричкова","is_removed":false,"is_mentor":false,"can_use_paid_features":true,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/darina_kirichkova","has_received_mentor_response_at_least_once":false,"additional_info":{}},"created_at":"18 октября 2023","solution":true,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[{"id":50756,"user_id":473059,"comment_id":183595}]},{"id":183650,"body":"Слона-то я и не приметил)","creator":{"id":473059,"public_name":"Алексей Назаренко","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/nzrnk","has_received_mentor_response_at_least_once":false,"additional_info":{}},"created_at":"18 октября 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]}],"useful":false,"commenting_disabled":true,"subscribers":[{"id":192292,"user_id":473059},{"id":192376,"user_id":117652}],"mentor":{"id":86,"user_id":75907,"full_name":"Ivan Gagarinov","username":"dzencot"}},{"id":92298,"title":"Здравствуйте, можете пожалуйста объяснить, почему код не проходит и выдает вот такую ошибку: Cannot access 'i' before initialization. Я соблюдаю синтаксис, пишу все в точности как написано в теории, но мои решения не проходят, то же самое и с моментом let i = i + 1; и let i += 1; та же самая ошибка, второй вариант вообще не читает, в прошлом задании пришлось смотреть решение преподавателя, а у него было как раз так написано, оно работало замечательно, а мое  вовсе не проходило проверку. ","creator":{"id":670852,"public_name":"Дмитрий  Данильчук","is_removed":false,"is_mentor":false,"can_use_paid_features":true,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/domitoru","has_received_mentor_response_at_least_once":true,"additional_info":{}},"communitable":{"id":2640,"slug":"aggregation","name":"Агрегация данных","location":"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit","link":"\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics\"\u003eКурс «Основы JavaScript»\u003c/a\u003e\u003cbr\u003e\u0026#8627; Урок «\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit\"\u003eАгрегация данных\u003c/a\u003e» "},"created_at":"09 сентября 2023","location":"/topics/92298","has_solutions":null,"can_show_mentor_info":true,"state":"active","mentorship_state":"closed","can_destroy":false,"can_like":true,"can_update":false,"can_subscribe":true,"kind":"question","likes":[],"comments":[{"id":181860,"body":"Вот ссылка на мое решение - https://ru.hexlet.io/code_reviews/1138826","creator":{"id":670852,"public_name":"Дмитрий  Данильчук","is_removed":false,"is_mentor":false,"can_use_paid_features":true,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/domitoru","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"09 сентября 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]},{"id":181932,"body":"**Дмитрий  Данильчук**, \n\nвам нужно изучить вывод тестов - они показывают, что в 7 строке кода возникает ошибка, которую нужно поправить.","creator":{"id":364375,"public_name":"Olga Pejenkova","is_removed":false,"is_mentor":true,"can_use_paid_features":true,"is_tutor":true,"public_profile_enabled":null,"public_profile_url":"/u/olala","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"11 сентября 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]}],"useful":false,"commenting_disabled":true,"subscribers":[{"id":189946,"user_id":670852},{"id":190060,"user_id":364375}],"mentor":{"id":98,"user_id":364375,"full_name":"Olga Pezhenkova","username":"olala"}},{"id":88771,"title":"https://ru.hexlet.io/code_reviews/1041402\n\nЗдравствуйте! В решении учителя в result используется интерполяция. Корректно ли моё решение (код прошёл проверку)? Ведь JS при сложении строки и чисел автоматически преобразует числа в строку","creator":{"id":643557,"public_name":"Webdev","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/user-4a02829d6b95e1af","has_received_mentor_response_at_least_once":true,"additional_info":{}},"communitable":{"id":2640,"slug":"aggregation","name":"Агрегация данных","location":"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit","link":"\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics\"\u003eКурс «Основы JavaScript»\u003c/a\u003e\u003cbr\u003e\u0026#8627; Урок «\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit\"\u003eАгрегация данных\u003c/a\u003e» "},"created_at":"05 июня 2023","location":"/topics/88771","has_solutions":null,"can_show_mentor_info":false,"state":"active","mentorship_state":"closed","can_destroy":false,"can_like":true,"can_update":false,"can_subscribe":true,"kind":"question","likes":[],"comments":[{"id":177064,"body":"Оно корректно , но менее наглядно чем у учителя.","creator":{"id":532825,"public_name":"Андрей Никитин","is_removed":false,"is_mentor":false,"can_use_paid_features":true,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/android127","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"05 июня 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[{"id":47110,"user_id":643557,"comment_id":177064}]}],"useful":false,"commenting_disabled":true,"subscribers":[{"id":183283,"user_id":643557},{"id":183305,"user_id":532825}],"mentor":{"id":86,"user_id":75907,"full_name":"Ivan Gagarinov","username":"dzencot"}},{"id":87084,"title":"https://ru.hexlet.io/code_reviews/935296 помогите разобраться, не могу понять что мне выдает система проверки решения.","creator":{"id":564725,"public_name":"Илья Денисов","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/tw1x","has_received_mentor_response_at_least_once":true,"additional_info":{}},"communitable":{"id":2640,"slug":"aggregation","name":"Агрегация данных","location":"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit","link":"\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics\"\u003eКурс «Основы JavaScript»\u003c/a\u003e\u003cbr\u003e\u0026#8627; Урок «\u003ca class=\"text-body text-decoration-none\" href=\"https://ru.hexlet.io/courses/js-basics/lessons/aggregation/theory_unit\"\u003eАгрегация данных\u003c/a\u003e» "},"created_at":"19 апреля 2023","location":"/topics/87084","has_solutions":null,"can_show_mentor_info":true,"state":"active","mentorship_state":"closed","can_destroy":false,"can_like":true,"can_update":false,"can_subscribe":true,"kind":"question","likes":[],"comments":[{"id":174649,"body":"😒","creator":{"id":564725,"public_name":"Илья Денисов","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/tw1x","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"19 апреля 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]},{"id":174650,"body":"получается проблема была в цикле, то есть в увеличении, когда я пытался объяснить что надо прибавить единицу, таким образом \"i = +1\"; это не работает, выдает что-то не понятно про память JS, тогда как \"i++\"; и \"i = i + 1\"; сработало, но линтер ругался на \"i++\";","creator":{"id":564725,"public_name":"Илья Денисов","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/tw1x","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"19 апреля 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]},{"id":174651,"body":"оказывается я тупанул и вместо \"i = +1\"; надо было написать \"i += 1\"; с этим разобрался, но система не указала мне на синтакситескую ошибку.","creator":{"id":564725,"public_name":"Илья Денисов","is_removed":false,"is_mentor":false,"can_use_paid_features":false,"is_tutor":false,"public_profile_enabled":null,"public_profile_url":"/u/tw1x","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"19 апреля 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]},{"id":174691,"body":"Приветствую, Илья! Здорово, что разобрались в итоге. Интерпретатор не указывал на синтаксическую ошибку потому, что ошибки тут нет. С точки зрения синтаксиса языка строчка `i = +1` корректна. Переменной присваивается значение 1, знак плюса никак не меняет знак числа. Ошибка тут логическая, но интерпретатор не понимает смыслов, поэтому указать на логическую ошибку не может","creator":{"id":198906,"public_name":"Maksim Litvinov","is_removed":false,"is_mentor":true,"can_use_paid_features":true,"is_tutor":true,"public_profile_enabled":null,"public_profile_url":"/u/malcom","has_received_mentor_response_at_least_once":true,"additional_info":{}},"created_at":"20 апреля 2023","solution":null,"can_destroy":false,"can_like":true,"can_update":false,"can_mark_as_solution":false,"likes":[]}],"useful":false,"commenting_disabled":true,"subscribers":[{"id":180098,"user_id":564725},{"id":180156,"user_id":198906}],"mentor":{"id":79,"user_id":198906,"full_name":"Maxim Litvinov","username":"malcom"}}];gon.topic_type="community";gon.communitable_type="Lesson";gon.api_topics_url="https://ru.hexlet.io/api/topics/lessons.json?q%5Bcommunitable_of_Lesson_type_id_eq%5D=2640\u0026q%5Bcommunitable_type_eq%5D=Lesson";gon.communitable_id=2640;gon.can_render_new_topic_box=true;gon.topics_count=42;gon.finish_url="/api/lessons/2640/finish_unit.json?unit=exercise";gon.run={"id":13414351,"state":"not_pulled","ide_port":null,"ide_url":"https://ide-js-basics-aggregation-7345112.evaluator5-6.hexlet.io:443?","ide_javascript_url":"https://ide-js-basics-aggregation-7345112.evaluator5-6.hexlet.io:443/assets/main.js/?","human_state_name":"not pulled","web_port":null,"web_url":"https://web-js-basics-aggregation-7345112.evaluator5-6.hexlet.io:443?","instance_id":7345112,"exercise_finished":false,"server_status":"alive"};gon.exercise={"id":1860,"is_reviewable":true,"kind":"exercise"};gon.next_url="/courses/js-basics/lessons/aggregation/next?unit=exercise";gon.group_chat_url=null;gon.ide_settings={"has_web_view":false,"readme":"\u003ch2 id=\"joinnumbersfromrange-js\"\u003ejoinNumbersFromRange.js\u003c/h2\u003e\u003cp\u003eРеализуйте функцию \u003ccode\u003ejoinNumbersFromRange()\u003c/code\u003e, которая объединяет все числа из диапазона в строку и возвращает её:\u003c/p\u003e\u003cpre class=\"hljs\"\u003e\u003ccode class=javascript\u003ejoinNumbersFromRange(1, 1); \u0026#x2F;\u0026#x2F; \u0026#x27;1\u0026#x27;\njoinNumbersFromRange(2, 3); \u0026#x2F;\u0026#x2F; \u0026#x27;23\u0026#x27;\njoinNumbersFromRange(5, 10); \u0026#x2F;\u0026#x2F; \u0026#x27;5678910\u0026#x27;\n\u003c/code\u003e\u003c/pre\u003e","readme_markdown":"## joinNumbersFromRange.js\n\nРеализуйте функцию `joinNumbersFromRange()`, которая объединяет все числа из диапазона в строку и возвращает её:\n\n```javascript\njoinNumbersFromRange(1, 1); // '1'\njoinNumbersFromRange(2, 3); // '23'\njoinNumbersFromRange(5, 10); // '5678910'\n```\n","files_to_open":["joinNumbersFromRange.js"],"linter_config":{"state":"disabled","message":"\u003cdiv class=\"col-lg-10\"\u003e\u003ch3 class=\"fw-bold text-white\"\u003eЛинтер отключён\u003c/h3\u003e\u003cp class=\"fs-5 mb-2\"\u003e\u003ca href=\"https://help.hexlet.ru/article/65229\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eЛинтер\u003c/a\u003e проверяет код на соответствие стандартам. Писать хорошо оформленный код особенно важно, если вы хотите работать программистом. Чтобы включить автоматическую проверку линтером, выберите один из платных форматов обучения.\u003c/p\u003e\u003ca href=\"https://ru.hexlet.io/account/subscription\" class=\"btn btn-outline-primary mx-auto rounded\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eПосмотреть цены\u003c/a\u003e\u003c/div\u003e"}};gon.ideOnboarding={"isFirstVisit":false};gon.exercise_solution={"removedParts":[],"state":"can_open_solution"};
+//]]>
+</script>
+<script>
+//<![CDATA[
+if ('PerformanceObserver' in window) {
+  ;window.NREUM||(NREUM={});NREUM.init={privacy:{cookies_enabled:false},ajax:{deny_list:["bam.eu01.nr-data.net"]}};
+
+  ;NREUM.loader_config={accountID:"3811879",trustKey:"3811879",agentID:"535909239",licenseKey:"NRJS-1065fb09b1320dc2d82",applicationID:"535909239"};
+  ;NREUM.info={beacon:"bam.eu01.nr-data.net",errorBeacon:"bam.eu01.nr-data.net",licenseKey:"NRJS-1065fb09b1320dc2d82",applicationID:"535909239",sa:1};
+  ;(()=>{var e,t,r={9071:(e,t,r)=>{"use strict";r.d(t,{I:()=>n});var n=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(n=+i[1])},6900:(e,t,r)=>{"use strict";let n;if(r.d(t,{H:()=>i}),r(2374).il){const e=document.createElement("div");e.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e",n=e.getElementsByTagName("div").length}var i;i=4===n?6:3===n?7:2===n?8:1===n?9:0},6562:(e,t,r)=>{"use strict";r.d(t,{P_:()=>h,Mt:()=>v,C5:()=>d,DL:()=>w,OP:()=>B,lF:()=>V,Yu:()=>A,Dg:()=>p,CX:()=>l,GE:()=>y,sU:()=>M});var n={};r.r(n),r.d(n,{agent:()=>O,match:()=>_,version:()=>S});var i=r(6797),o=r(909),a=r(8610);class s{constructor(e,t){try{if(!e||"object"!=typeof e)return(0,a.Z)("New setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,a.Z)("Setting a Configurable requires a model to set its initial properties");Object.assign(this,t),Object.entries(e).forEach((e=>{let[t,r]=e;const n=(0,o.q)(t);n.length&&r&&"object"==typeof r&&n.forEach((e=>{e in r&&((0,a.Z)(`"${e}" is a protected attribute and can not be changed in feature ${t}.  It will have no effect.`),delete r[e])})),this[t]=r}))}catch(e){(0,a.Z)("An error occured while setting a Configurable",e)}}}const c={beacon:i.ce.beacon,errorBeacon:i.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},u={};function d(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!u[e])throw new Error(`Info for ${e} was never set`);return u[e]}function l(e,t){if(!e)throw new Error("All info objects require an agent identifier!");u[e]=new s(t,c),(0,i.Qy)(e,u[e],"info")}const f={allow_bfcache:!1,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0,harvestTimeSeconds:10},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30},session_trace:{enabled:!0,harvestTimeSeconds:10},spa:{enabled:!0,harvestTimeSeconds:10}},g={};function h(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!g[e])throw new Error(`Configuration for ${e} was never set`);return g[e]}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");g[e]=new s(t,f),(0,i.Qy)(e,g[e],"config")}function v(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var r=h(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const m={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},b={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!b[e])throw new Error(`LoaderConfig for ${e} was never set`);return b[e]}function y(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");b[e]=new s(t,m),(0,i.Qy)(e,b[e],"loader_config")}const A=(0,i.mF)().o;var x=r(6900),E=r(2053),O=null,S=null;if(navigator.userAgent){var D=navigator.userAgent,j=D.match(/Version\/(\S+)\s+Safari/);j&&-1===D.indexOf("Chrome")&&-1===D.indexOf("Chromium")&&(O="Safari",S=j[1])}function _(e,t){if(!O)return!1;if(e!==O)return!1;if(!t)return!0;if(!S)return!1;for(var r=S.split("."),n=t.split("."),i=0;i<n.length;i++)if(n[i]!==r[i])return!1;return!0}var k=r(5526),T=r(2374);const P="NRBA_SESSION_ID";function C(){if(!T.il)return null;try{let e;return null===(e=window.sessionStorage.getItem(P))&&(e=(0,k.ky)(16),window.sessionStorage.setItem(P,e)),e}catch(e){return null}}var I=T._A?.XMLHttpRequest,N=I&&I.prototype;const R={};function B(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error(`Runtime for ${e} was never set`);return R[e]}function M(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");var r;R[e]=new s(t,(r=e,{customTransaction:void 0,disabled:!1,features:{},isolatedBacklog:!1,loaderType:void 0,maxBytes:6===x.H?2e3:3e4,offset:(0,E.yf)(),onerror:void 0,origin:""+T._A?.location,ptid:void 0,releaseIds:{},sessionId:1==v(r,"privacy.cookies_enabled")?C():null,xhrWrappable:I&&N&&N.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:n})),(0,i.Qy)(e,R[e],"runtime")}function V(e){return function(e){try{const t=d(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},8226:(e,t,r)=>{"use strict";r.d(t,{q:()=>n});const n="1223.PROD"},9557:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(8610);const i={agentIdentifier:""};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},4329:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(3752),i=r(7022),o=r(4045),a=r(2325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=Array.from(s[e]);function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((e=>{let[t]=e;a(t)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},3752:(e,t,r)=>{"use strict";r.d(t,{ee:()=>u});var n=r(6797),i=r(3916),o=r(7022),a=r(6562),s="nr@context";let c=(0,n.fP)();var u;function d(){}function l(){return new d}function f(){(u.backlog.api||u.backlog.feature)&&(u.aborted=!0,u.backlog={})}c.ee?u=c.ee:(u=function e(t,r){var n={},c={},g={},h=!1;try{h=16===r.length&&(0,a.OP)(r).isolatedBacklog}catch(e){}var p={on:b,addEventListener:b,removeEventListener:w,emit:m,get:A,listeners:y,context:v,buffer:x,abort:f,aborted:!1,isBuffering:E,debugId:r,backlog:h?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return p;function v(e){return e&&e instanceof d?e:e?(0,i.X)(e,s,l):l()}function m(e,r,n,i,o){if(!1!==o&&(o=!0),!u.aborted||i){t&&o&&t.emit(e,r,n);for(var a=v(n),s=y(e),d=s.length,l=0;l<d;l++)s[l].apply(a,r);var f=O()[c[e]];return f&&f.push([p,e,r,a]),a}}function b(e,t){n[e]=y(e).concat(t)}function w(e,t){var r=n[e];if(r)for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)}function y(e){return n[e]||[]}function A(t){return g[t]=g[t]||e(p,t)}function x(e,t){var r=O();p.aborted||(0,o.D)(e,(function(e,n){t=t||"feature",c[n]=t,t in r||(r[t]=[])}))}function E(e){return!!O()[c[e]]}function O(){return p.backlog}}(void 0,"globalEE"),c.ee=u)},9252:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(3752).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4045:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(9252);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},8544:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(2374),i=!1;try{var o=Object.defineProperty({},"passive",{get:function(){i=!0}});n._A?.addEventListener("testPassive",null,o),n._A?.removeEventListener("testPassive",null,o)}catch(e){}function a(e){return i?{passive:!0,capture:!!e}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];window.addEventListener(e,t,a(r))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];document.addEventListener(e,t,a(r))}},5526:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>i,ky:()=>o});var n=r(2374);function i(){var e=null,t=0,r=n._A?.crypto||n._A?.msCrypto;function i(){return e?15&e[t++]:16*Math.random()|0}r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,a="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",s="",c=0;c<a.length;c++)s+="x"===(o=a[c])?i().toString(16):"y"===o?(o=3&i()|8).toString(16):o;return s}function o(e){var t=null,r=0,n=self.crypto||self.msCrypto;n&&n.getRandomValues&&Uint8Array&&(t=n.getRandomValues(new Uint8Array(31)));for(var i=[],o=0;o<e;o++)i.push(a().toString(16));return i.join("");function a(){return t?15&t[r++]:16*Math.random()|0}}},2053:(e,t,r)=>{"use strict";r.d(t,{nb:()=>c,os:()=>u,yf:()=>s,zO:()=>a});var n=r(7145),i=(new Date).getTime(),o=i;function a(){return n.G&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-o}function s(){return i}function c(e){o=e}function u(){return o}},7145:(e,t,r)=>{"use strict";r.d(t,{G:()=>n});const n=void 0!==r(2374)._A?.performance?.timing?.navigationStart},6625:(e,t,r)=>{"use strict";r.d(t,{s:()=>c,v:()=>u});var n=r(8283),i=r(9071),o=r(2053),a=r(7145),s=r(2374);let c=!0;function u(e){var t=function(){if(i.I&&i.I<9)return;if(a.G)return c=!1,s._A?.performance?.timing?.navigationStart}();t&&((0,n.B)(e,"starttime",t),(0,o.nb)(t))}},8283:(e,t,r)=>{"use strict";r.d(t,{B:()=>o,L:()=>a});var n=r(2053),i={};function o(e,t,r){void 0===r&&(r=(0,n.zO)()+(0,n.os)()),i[e]=i[e]||{},i[e][t]=r}function a(e,t,r,n){const o=e.sharedContext.agentIdentifier;var a=i[o]?.[r],s=i[o]?.[n];void 0!==a&&void 0!==s&&e.store("measures",t,{value:s-a})}},9548:(e,t,r)=>{"use strict";r.d(t,{T:()=>i});var n=r(2374);const i={isFileProtocol:function(){let e=Boolean("file:"===(0,n.lW)()?.location?.protocol);e&&(i.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},8610:(e,t,r)=>{"use strict";function n(e,t){console&&console.warn&&"function"==typeof console.warn&&(console.warn(`New Relic: ${e}`),t&&console.warn(t))}r.d(t,{Z:()=>n})},3916:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},2374:(e,t,r)=>{"use strict";r.d(t,{_A:()=>o,il:()=>n,lW:()=>a,v6:()=>i});const n=Boolean("undefined"!=typeof window&&window.document),i=Boolean("undefined"!=typeof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator);let o=(()=>{if(n)return window;if(i){if("undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope)return globalThis;if(self instanceof WorkerGlobalScope)return self}throw new Error("New Relic browser agent shutting down due to error: Unable to locate global scope. This is possibly due to code redefining browser global variables like `self` and `window`.")})();function a(){return o}},7022:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t){var r=[],i="",o=0;for(i in e)n.call(e,i)&&(r[o]=t(i,e[i]),o+=1);return r}},9226:(e,t,r)=>{"use strict";r.d(t,{$c:()=>u,Ng:()=>d,RR:()=>c});var n=r(6562),i=r(9557),o=r(9548),a=r(8610),s={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"};class c extends i.w{constructor(e){super(e)}shouldObfuscate(){return u(this.sharedContext.agentIdentifier).length>0}obfuscateString(e){if(!e||"string"!=typeof e)return e;for(var t=u(this.sharedContext.agentIdentifier),r=e,n=0;n<t.length;n++){var i=t[n].regex,o=t[n].replacement||"*";r=r.replace(i,o)}return r}}function u(e){var t=[],r=(0,n.Mt)(e,"obfuscate")||[];return t=t.concat(r),o.T.isFileProtocol()&&t.push(s),t}function d(e){for(var t=!1,r=!1,n=0;n<e.length;n++){"regex"in e[n]?"string"!=typeof e[n].regex&&e[n].regex.constructor!==RegExp&&((0,a.Z)('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),r=!0):((0,a.Z)('An obfuscation replacement rule was detected missing a "regex" value.'),r=!0);var i=e[n].replacement;i&&"string"!=typeof i&&((0,a.Z)('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),t=!0)}return!t&&!r}},2650:(e,t,r)=>{"use strict";r.d(t,{K:()=>a,b:()=>o});var n=r(8544);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},6797:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>s});var n=r(2053),i=r(2374);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.zO)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},6998:(e,t,r)=>{"use strict";r.d(t,{N:()=>i,e:()=>o});var n=r(8544);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return void(0,n.iz)("visibilitychange",r);function r(){if(t){if("hidden"!=document.visibilityState)return;e()}e(document.visibilityState)}}function o(){return"hidden"===document.visibilityState?-1:1/0}},6034:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.metrics},2484:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewEvent},6382:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewTiming},1509:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6562),i=r(3752),o=r(2384),a=r(6797);class s{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,n.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=r,this.blocked=!1,this.checkConfiguration()}checkConfiguration(){if(!(0,n.lF)(this.agentIdentifier)){let e={...(0,a.gG)().info?.jsAttributes};try{e={...e,...(0,n.C5)(this.agentIdentifier)?.jsAttributes}}catch(e){}(0,o.j)(this.agentIdentifier,{...(0,a.gG)(),info:{...(0,a.gG)().info,jsAttributes:e}})}}}},2384:(e,t,r)=>{"use strict";r.d(t,{j:()=>w});var n=r(8683),i=r.n(n),o=r(2325),a=r(6562),s=r(9252),c=r(7022),u=r(3752),d=r(2053),l=r(4329),f=r(2650),g=r(2374);function h(e,t,n){n||(0,l.R)(e,"api"),function(e){function t(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&e.api[t](...n)}))}["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError"].forEach((r=>{e[r]=function(){for(var e=arguments.length,n=new Array(e),i=0;i<e;i++)n[i]=arguments[i];return t(r,...n)}}))}(t);var h=u.ee.get(e),p=h.get("tracer"),v="api-",m="api-ixn-";function b(){}(0,c.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(e,r){t[r]=y(v,r,!0,"api")})),t.addPageAction=y(v,"addPageAction",!0,o.D.pageAction),t.setCurrentRouteName=y(v,"routeName",!0,o.D.spa),t.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,a.OP)(e).customTransaction=(r||"http://custom.transaction")+t,y(v,"setPageViewName",!0,"api")()},t.setCustomAttribute=function(t,r){const n=(0,a.C5)(e);return(0,a.CX)(e,{...n,jsAttributes:{...n.jsAttributes,[t]:r}}),y(v,"setCustomAttribute",!0,"api")()},t.interaction=function(){return(new b).get()};var w=b.prototype={createTracer:function(e,t){var r={},n=this,i="function"==typeof t;return(0,s.p)("api-ixn-tracer",[(0,d.zO)(),e,r],n,o.D.spa,h),function(){if(p.emit((i?"":"no-")+"fn-start",[(0,d.zO)(),n,i],r),i)try{return t.apply(this,arguments)}catch(e){throw p.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],r),e}finally{p.emit("fn-end",[(0,d.zO)()],r)}}}};function y(e,t,r,n){return function(){return(0,s.p)("record-supportability",["API/"+t+"/called"],void 0,o.D.metrics,h),(0,s.p)(e+t,[(0,d.zO)()].concat(i()(arguments)),r?null:this,n,h),r?void 0:this}}function A(){r.e(692).then(r.bind(r,5692)).then((t=>{let{setAPI:r}=t;r(e),(0,l.L)(e,"api")}))}(0,c.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(e,t){w[t]=y(m,t,void 0,o.D.spa)})),t.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,s.p)("record-supportability",["API/noticeError/called"],void 0,o.D.metrics,h),(0,s.p)("err",[e,(0,d.zO)(),!1,t],void 0,o.D.jserrors,h)},g.v6?A():(0,f.b)((()=>A()),!0)}var p=r(6797);const v={stn:o.D.sessionTrace,err:o.D.jserrors,ins:o.D.pageAction,spa:o.D.spa};function m(e,t){var r=u.ee.get(t);e&&"object"==typeof e&&((0,c.D)(e,(function(e,t){if(!t)return(0,s.p)("block-"+e,[],void 0,v[e],r);t&&!b[e]&&((0,s.p)("feat-"+e,[],void 0,v[e],r),b[e]=!0)})),(0,l.L)(t,o.D.pageViewEvent))}const b={};function w(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=arguments.length>2?arguments[2]:void 0,n=arguments.length>3?arguments[3]:void 0,{init:i,info:o,loader_config:s,runtime:c={loaderType:r},exposed:u=!0}=t;const d=(0,p.gG)();let l={};return o||(i=d.init,o=d.info,s=d.loader_config,l=d),g.v6&&(o.jsAttributes={...o.jsAttributes,isWorker:!0}),(0,a.CX)(e,o),(0,a.Dg)(e,i||{}),(0,a.GE)(e,s||{}),(0,a.sU)(e,c),h(e,l,n),(0,p.Qy)(e,d,"api"),(0,p.Qy)(e,u,"exposed"),g.v6||((0,p.EZ)("activatedFeatures",b),(0,p.EZ)("setToken",(t=>m(t,e)))),l}},909:(e,t,r)=>{"use strict";r.d(t,{Z:()=>i,q:()=>o});var n=r(2325);function i(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}function o(e){return e===n.D.jserrors?[]:["auto"]}},2325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8}},8683:e=>{e.exports=function(e,t,r){t||(t=0),void 0===r&&(r=e?e.length:0);for(var n=-1,i=r-t||0,o=Array(i<0?0:i);++n<i;)o[n]=e[t+n];return o}},4992:(e,t,r)=>{var n={"./ajax/aggregate":[960,779,960],"./jserrors/aggregate":[6112,779,112],"./metrics/aggregate":[4325,779,325],"./page_action/aggregate":[6817,779,817],"./page_view_event/aggregate":[4823,779,823],"./page_view_timing/aggregate":[8785,779,785],"./session_trace/aggregate":[1307,779,307],"./spa/aggregate":[9378,779,378]};function i(e){if(!r.o(n,e))return Promise.resolve().then((()=>{var t=new Error("Cannot find module '"+e+"'");throw t.code="MODULE_NOT_FOUND",t}));var t=n[e],i=t[0];return Promise.all(t.slice(1).map(r.e)).then((()=>r(i)))}i.keys=()=>Object.keys(n),i.id=4992,e.exports=i}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return i.d(t,{a:t}),t},i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>e+"."+i.h().slice(0,8)+"-1223.js",i.h=()=>"215647de1097144af948",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var f=(t,n)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={55:0,308:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=window.webpackChunkNRBA=window.webpackChunkNRBA||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})();var o={};(()=>{"use strict";i.r(o);var e=i(2325),t=i(6562);const r=Object.values(e.D);function n(e){const n={};return r.forEach((r=>{n[r]=function(e,r){return!1!==(0,t.Mt)(r,`${e}.enabled`)}(r,e)})),n}var a=i(2384),s=i(909),c=i(9557),u=i(7022);class d extends c.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,u.D)(e,(function(e,r){t[e]=l(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,u.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=l(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=f(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=l(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=g(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function l(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=f(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function f(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function g(e){return"object"!=typeof e?[]:(0,u.D)(e,h)}function h(e,t){return t}var p=i(6797),v=i(5526),m=i(8610);var b=i(9252),w=i(2053),y=i(8283),A=i(6625),x=i(4329),E=i(1509),O=i(2650),S=i(2374);class D extends E.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.completed=new Promise(((e,t)=>{this.resolve=e,this.reject=t})),this.hasAggregator=!1,this.auto=n,n&&(0,x.R)(e,r)}importAggregator(){try{if(this.hasAggregator||!this.auto)return;this.hasAggregator=!0;const e=async()=>{try{const{Aggregate:e}=await i(4992)(`./${this.featureName}/aggregate`);new e(this.agentIdentifier,this.aggregator),this.resolve()}catch(e){(0,m.Z)(`Failed to import aggregator class for ${this.featureName}`,e)}};S.v6?e():(0,O.b)((()=>e()),!0)}catch(e){this.reject(e)}}}var j,_,k,T=i(2484);class P extends D{constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,T.t,r),S.il&&((0,A.v)(e),(0,y.B)(e,"firstbyte",(0,w.yf)()),(0,O.K)((()=>this.measureDomContentLoaded())),(0,O.b)((()=>this.measureWindowLoaded()),!0),this.importAggregator())}measureWindowLoaded(){var t=(0,w.zO)();(0,y.B)(this.agentIdentifier,"onload",t+(0,w.os)()),(0,b.p)("timing",["load",t],void 0,e.D.pageViewTiming,this.ee)}measureDomContentLoaded(){(0,y.B)(this.agentIdentifier,"domContent",(0,w.zO)()+(0,w.os)())}}j=P,_="featureName",k=T.t,_ in j?Object.defineProperty(j,_,{value:k,enumerable:!0,configurable:!0,writable:!0}):j[_]=k;var C=i(6998),I=i(8544),N=i(6382);class R extends D{constructor(t,r){var n;let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(t,r,N.t,i),n=this,S.il){if(this.pageHiddenTime=(0,C.e)(),this.performanceObserver,this.lcpPerformanceObserver,this.clsPerformanceObserver,this.fiRecorded=!1,"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){this.performanceObserver=new PerformanceObserver((function(){return n.perfObserver(...arguments)}));try{this.performanceObserver.observe({entryTypes:["paint"]})}catch(e){}this.lcpPerformanceObserver=new PerformanceObserver((function(){return n.lcpObserver(...arguments)}));try{this.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(e){}this.clsPerformanceObserver=new PerformanceObserver((function(){return n.clsObserver(...arguments)}));try{this.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(e){}}this.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((e=>{(0,I.iz)(e,(function(){return n.captureInteraction(...arguments)}))})),(0,C.N)((()=>{this.pageHiddenTime=(0,w.zO)(),(0,b.p)("docHidden",[this.pageHiddenTime],void 0,e.D.pageViewTiming,this.ee)}),!0),(0,I.bP)("pagehide",(()=>(0,b.p)("winPagehide",[(0,w.zO)()],void 0,e.D.pageViewTiming,this.ee))),this.importAggregator()}}perfObserver(t,r){t.getEntries().forEach((t=>{"first-paint"===t.name?(0,b.p)("timing",["fp",Math.floor(t.startTime)],void 0,e.D.pageViewTiming,this.ee):"first-contentful-paint"===t.name&&(0,b.p)("timing",["fcp",Math.floor(t.startTime)],void 0,e.D.pageViewTiming,this.ee)}))}lcpObserver(t,r){var n=t.getEntries();if(n.length>0){var i=n[n.length-1];if(this.pageHiddenTime<i.startTime)return;var o=[i],a=this.addConnectionAttributes({});a&&o.push(a),(0,b.p)("lcp",o,void 0,e.D.pageViewTiming,this.ee)}}clsObserver(t){t.getEntries().forEach((t=>{t.hadRecentInput||(0,b.p)("cls",[t],void 0,e.D.pageViewTiming,this.ee)}))}addConnectionAttributes(e){var t=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(t)return t.type&&(e["net-type"]=t.type),t.effectiveType&&(e["net-etype"]=t.effectiveType),t.rtt&&(e["net-rtt"]=t.rtt),t.downlink&&(e["net-dlink"]=t.downlink),e}captureInteraction(r){if(r instanceof t.Yu.EV&&!this.fiRecorded){var n=Math.round(r.timeStamp),i={type:r.type};this.addConnectionAttributes(i),n<=(0,w.zO)()?i.fid=(0,w.zO)()-n:n>(0,w.os)()&&n<=Date.now()?(n-=(0,w.os)(),i.fid=(0,w.zO)()-n):n=(0,w.zO)(),this.fiRecorded=!0,(0,b.p)("timing",["fi",n,i],void 0,e.D.pageViewTiming,this.ee)}}}!function(e,t,r){t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(R,"featureName",N.t);var B=i(4045),M="React",V="Angular",q="AngularJS",L="Backbone",z="Ember",W="Vue",$="Meteor",F="Zepto",G="Jquery";function Z(){if(!S.il)return[];var e=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var e=document.querySelectorAll("body > div"),t=0;t<e.length;t++)if(Object.keys(e[t]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(e){return!1}})()&&e.push(M),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(e){return!1}}()&&e.push(q),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(e){return!1}}()&&e.push(V),window.Backbone&&e.push(L),window.Ember&&e.push(z),window.Vue&&e.push(W),window.Meteor&&e.push($),window.Zepto&&e.push(F),window.jQuery&&e.push(G)}catch(e){}return e}var U=i(9548),H=i(9226),X=i(8226);const Q=Boolean(S._A?.Worker),K=Boolean(S._A?.SharedWorker),J=Boolean(S._A?.navigator?.serviceWorker);let Y,ee,te;var re=i(6034);class ne extends D{constructor(e,t){var r;let n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,re.t,i),r=this,this.PfFeatStatusEnum=n,this.singleChecks(),this.eachSessionChecks(),(0,B.X)("record-supportability",(function(){return r.recordSupportability(...arguments)}),this.featureName,this.ee),(0,B.X)("record-custom",(function(){return r.recordCustom(...arguments)}),this.featureName,this.ee),this.importAggregator()}recordSupportability(e,t){var r=["sm",e,{name:e},t];return(0,b.p)("storeMetric",r,null,this.featureName,this.ee),r}recordCustom(e,t){var r=["cm",e,{name:e},t];return(0,b.p)("storeEventMetrics",r,null,this.featureName,this.ee),r}singleChecks(){this.recordSupportability(`Generic/Version/${X.q}/Detected`);const{loaderType:e}=(0,t.OP)(this.agentIdentifier);e&&this.recordSupportability(`Generic/LoaderType/${e}/Detected`),S.il&&(0,O.K)((()=>{Z().forEach((e=>{this.recordSupportability("Framework/"+e+"/Detected")}))})),U.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),U.T.supportabilityMetricSent=!0);const r=(0,H.$c)(this.agentIdentifier);r.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),r.length>0&&!(0,H.Ng)(r)&&this.recordSupportability("Generic/Obfuscate/Invalid"),S.il&&this.reportPolyfillsNeeded(),function(e){if(!Y){if(Q){Y=Worker;try{S._A.Worker=r(Y,"Dedicated")}catch(e){o(e,"Dedicated")}if(K){ee=SharedWorker;try{S._A.SharedWorker=r(ee,"Shared")}catch(e){o(e,"Shared")}}else n("Shared");if(J){te=navigator.serviceWorker.register;try{S._A.navigator.serviceWorker.register=(t=te,function(){for(var e=arguments.length,r=new Array(e),n=0;n<e;n++)r[n]=arguments[n];return i("Service",r[1]?.type),t.apply(navigator.serviceWorker,r)})}catch(e){o(e,"Service")}}else n("Service");var t;return}n("All")}function r(e,t){return new Proxy(e,{construct:(e,r)=>(i(t,r[1]?.type),new e(...r))})}function n(t){S.v6||e(`Workers/${t}/Unavailable`)}function i(t,r){e("module"===r?`Workers/${t}/Module`:`Workers/${t}/Classic`)}function o(t,r){e(`Workers/${r}/SM/Unsupported`),(0,m.Z)(`NR Agent: Unable to capture ${r} workers.`,t)}}(this.recordSupportability.bind(this))}reportPolyfillsNeeded(){this.recordSupportability(`Generic/Polyfill/Promise/${this.PfFeatStatusEnum.PROMISE}`),this.recordSupportability(`Generic/Polyfill/ArrayIncludes/${this.PfFeatStatusEnum.ARRAY_INCLUDES}`),this.recordSupportability(`Generic/Polyfill/ObjectAssign/${this.PfFeatStatusEnum.OBJECT_ASSIGN}`),this.recordSupportability(`Generic/Polyfill/ObjectEntries/${this.PfFeatStatusEnum.OBJECT_ENTRIES}`)}eachSessionChecks(){S.il&&(0,I.bP)("pageshow",(e=>{e.persisted&&this.recordCustom("Custom/BFCache/PageRestored")}))}}!function(e,t,r){t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(ne,"featureName",re.t);new class{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,v.ky)(16);this.agentIdentifier=r,this.sharedAggregator=new d({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=t.features||[],this.desiredFeatures.sort(((t,r)=>e.p[t.featureName]-e.p[r.featureName])),Object.assign(this,(0,a.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.start()}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){try{const e=n(this.agentIdentifier);this.desiredFeatures.forEach((t=>{if(e[t.featureName]){const r=(0,s.Z)(t.featureName);r.every((t=>e[t]))||(0,m.Z)(`${t.featureName} is enabled but one or more dependent features has been disabled (${JSON.stringify(r)}). This may cause unintended consequences or missing data...`),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,p.Qy)(this.agentIdentifier,this.features,"features")}catch(e){return(0,m.Z)("Failed to initialize instrument classes",e),!1}}}({features:[P,R,ne],loaderType:"lite"})})(),window.NRBA=o})();
+  }
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+window.EventsMapping = {
+  on: function(eventName, callback) {
+    if (gon.events.indexOf(eventName) === -1) {
+      throw new Error('Undefined event name ' + eventName + '. Check gon.events.');
+    }
+
+    if (!gon.fired_events.hasOwnProperty(eventName)) {
+      return;
+    }
+    var options = gon.fired_events[eventName];
+
+    callback(eventName, options);
+  }
+};
+var partytown = {
+  forward: [
+    'posthog.get_distinct_id', 'posthog.capture', 'posthog.identify', 'posthog.people.set',
+    'analytics.identify', 'analytics.track', // renta
+  ],
+  mainWindowAccessors: ['google_tag_manager', 'gon', 'EventsMapping'],
+};
+
+//]]>
+</script><script>
+//<![CDATA[
+/* Partytown 0.8.0 - MIT builder.io */
+!function(t,e,n,i,r,o,a,d,s,c,l,p){function u(){p||(p=1,"/"==(a=(o.lib||"/~partytown/")+(o.debug?"debug/":""))[0]&&(s=e.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(d=setTimeout(f,1e4),e.addEventListener("pt0",w),r?h(1):n.serviceWorker?n.serviceWorker.register(a+(o.swPath||"partytown-sw.js"),{scope:a}).then((function(t){t.active?h():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&h()}))}),console.error):f())))}function h(t){c=e.createElement(t?"script":"iframe"),t||(c.setAttribute("style","display:block;width:0;height:0;border:0;visibility:hidden"),c.setAttribute("aria-hidden",!0)),c.src=a+"partytown-"+(t?"atomics.js?v=0.8.0":"sandbox-sw.html?"+Date.now()),e.querySelector(o.sandboxParent||"body").appendChild(c)}function f(n,r){for(w(),i==t&&(o.forward||[]).map((function(e){delete t[e.split(".")[0]]})),n=0;n<s.length;n++)(r=e.createElement("script")).innerHTML=s[n].innerHTML,e.head.appendChild(r);c&&c.parentNode.removeChild(c)}function w(){clearTimeout(d)}o=t.partytown||{},i==t&&(o.forward||[]).map((function(e){l=t,e.split(".").map((function(e,n,i){l=l[i[n]]=n+1<i.length?"push"==i[n+1]?[]:l[i[n]]||{}:function(){(t._ptf=t._ptf||[]).push(i,arguments)}}))})),"complete"==e.readyState?u():(t.addEventListener("DOMContentLoaded",u),t.addEventListener("load",u))}(window,document,navigator,top,window.crossOriginIsolated);
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {
+  const options = {
+    dsn: 'https://5e408926ab534fba9c66d8f620d1f58b@o1090356.ingest.sentry.io/6106229',
+    environment: 'production',
+    release: 'v8927',
+    initialScope: {
+      user: gon.current_user
+    },
+    ignoreErrors: [
+      'top.GLOBALS', // Random plugins/extensions
+      'VK is',
+      'VK.Retargeting is ',
+      "Can't find variable: VK",
+      'pktAnnotationHighlighter',
+      'amplitude',
+      'google_tag_manager',
+      'Unexpected keyword',
+      'illegal character',
+      'Unexpected identifier',
+      'Illegal invocation',
+      'missing = in const declaration',
+      'Loading chunk 692 failed',
+    ],
+    allowUrls: [/https?:\/\/((cdn|cdn2|ru)\.)?hexlet.io/],
+    beforeSend(event, hint) {
+      const stack = hint?.originalException?.stack || '';
+      const errorInitiator = stack
+        .split('\n')
+        .map((line) => line.trim())
+        .find((line) => line.startsWith('at'));
+      const causedByConsole = errorInitiator
+        ? errorInitiator.includes('<anonymous>:')
+        : false;
+      return causedByConsole ? null : event;
+    },
+  };
+  const key = options.dsn.replace('https://', '').split('@')[0];
+
+  (function(c,u,v,n,p,e,z,A,w){function k(a){if(!x){x=!0;var l=u.getElementsByTagName(v)[0],d=u.createElement(v);d.src=A;d.crossOrigin="anonymous";d.addEventListener("load",function(){try{c[n]=r;c[p]=t;var b=c[e],d=b.init;b.init=function(a){for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(w[b]=a[b]);d(w)};B(a,b)}catch(g){console.error(g)}});l.parentNode.insertBefore(d,l)}}function B(a,l){try{for(var d=m.data,b=0;b<a.length;b++)if("function"===typeof a[b])a[b]();var e=!1,g=c.__SENTRY__;"undefined"!== typeof g&&g.hub&&g.hub.getClient()&&(e=!0);g=!1;for(b=0;b<d.length;b++)if(d[b].f){g=!0;var f=d[b];!1===e&&"init"!==f.f&&l.init();e=!0;l[f.f].apply(l,f.a)}!1===e&&!1===g&&l.init();var h=c[n],k=c[p];for(b=0;b<d.length;b++)d[b].e&&h?h.apply(c,d[b].e):d[b].p&&k&&k.apply(c,[d[b].p])}catch(C){console.error(C)}}for(var f=!0,y=!1,q=0;q<document.scripts.length;q++)if(-1<document.scripts[q].src.indexOf(z)){f="no"!==document.scripts[q].getAttribute("data-lazy");break}var x=!1,h=[],m=function(a){(a.e||a.p||a.f&& -1<a.f.indexOf("capture")||a.f&&-1<a.f.indexOf("showReportDialog"))&&f&&k(h);m.data.push(a)};m.data=[];c[e]=c[e]||{};c[e].onLoad=function(a){h.push(a);f&&!y||k(h)};c[e].forceLoad=function(){y=!0;f&&setTimeout(function(){k(h)})};"init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function(a){c[e][a]=function(){m({f:a,a:arguments})}});var r=c[n];c[n]=function(a,e,d,b,f){m({e:[].slice.call(arguments)});r&&r.apply(c,arguments)}; var t=c[p];c[p]=function(a){m({p:a.reason});t&&t.apply(c,arguments)};f||setTimeout(function(){k(h)})})(window,document,"script","onerror","onunhandledrejection","Sentry",key,"https://browser.sentry-cdn.com/6.17.4/bundle.min.js",options);
+
+})();
+
+
+
+//]]>
+</script>
+<script type="text/partytown">
+//<![CDATA[
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+
+getCoockieByName = function(cookies, name) {
+  if (!cookies) {
+    return null;
+  }
+
+  var v = cookies.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+  return v ? v[2] : null;
+}
+
+posthog.init('phc_qfyA3rLLRWvDfi4ZHSzzHhpz5num5AcPGev1NyfOvkn', {
+  api_host: 'https://eu.posthog.com',
+  autocapture: false,
+  capture_pageleave: false,
+  disable_session_recording: true,
+  loaded: function(posthog) {
+    console.debug('loaded posthog')
+
+    if (window.location.pathname === '/') {
+      console.debug('POSTHOG SESSION RECORDING ENABLE');
+      posthog.startSessionRecording();
+    }
+
+    window.EventsMapping.on('signed_up', function() {
+      var user = gon.current_user;
+
+      posthog.identify(user.id)
+      posthog.people.set({ email: user.email })
+    });
+
+    window.EventsMapping.on('signed_in', function() {
+      var user = gon.current_user;
+
+      posthog.identify(user.id)
+      posthog.people.set({ email: user.email })
+    });
+
+    window.EventsMapping.on('sign_up_failed', function(name, data) {
+      errors = data.error_messages
+      cookies = document.cookie
+
+      posthog.capture('sign_up_failed', {
+        errors: errors,
+        utm_source: getCoockieByName(cookies, 'utm_source'),
+        utm_medium: getCoockieByName(cookies, 'utm_medium'),
+        utm_campaign: getCoockieByName(cookies, 'utm_campaign'),
+        utm_content: getCoockieByName(cookies, 'utm_content'),
+        utm_term: getCoockieByName(cookies, 'utm_term'),
+      });
+    });
+  }
+});
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {
+  // for custom scroll trigger in gtm
+  var onceScrollHandler = function () {
+    var events = window.dataLayer || [];
+    events.push({event: 'real_first_scroll'});
+  };
+  window.addEventListener('scroll', onceScrollHandler, { once: true, passive: true });
+
+  const loadGtm = function() {
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WK88TH');
+  };
+  document.addEventListener('DOMContentLoaded', () => setTimeout(loadGtm, 1250));
+})();
+
+
+//]]>
+</script>
+<script type="text/partytown">
+//<![CDATA[
+(function() {
+  const entrypoint = '/script-collect-analytics';
+  var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src=entrypoint + "/analytics/" + key + "/analytics.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+
+  analytics.load("45dec37f43fa49e392061da423f072ca");
+  analytics.page();
+
+  window.EventsMapping.on('signed_up', function() {
+    var user = gon.current_user;
+
+    analytics.identify(user.id.toString(), {
+      email: user.email,
+      first_name: user.first_name,
+      last_name: user.last_name,
+      public_name: user.public_name,
+      city: user.city ? user.city.title : null,
+      birthday: user.birthday,
+      sanitized_phone_number: user.sanitized_phone_number,
+      locale: user.locale,
+      url: user.url
+    });
+  });
+
+  window.EventsMapping.on('signed_in', function() {
+    var user = gon.current_user;
+
+    analytics.identify(user.id.toString(), {
+      email: user.email,
+      first_name: user.first_name,
+      last_name: user.last_name,
+      public_name: user.public_name,
+      city: user.city ? user.city.title : null,
+      birthday: user.birthday,
+      sanitized_phone_number: user.sanitized_phone_number,
+      locale: user.locale,
+      url: user.url
+    });
+  });
+}
+})();
+
+//]]>
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Hexlet","url":"https://hexlet.io","sameAs":["https://www.facebook.com/Hexlet","https://www.youtube.com/user/HexletUniversity","https://twitter.com/HexletHQ","https://soundcloud.com/hexlet"],"legalName":"Hexlet Ltd.","address":"Itälahdenkatu 22 A, 00210 Helsinki, Finland","vatID":"VAT ID: FI26641607","telephone":"+7 495 085 28 38","logo":{"@type":"ImageObject","url":"https://cdn2.hexlet.io/assets/hexlet_logo-4e7b643fd7cbe42da81624aba2faa9267523b2b925d5b576536e05d061659083.png"}}</script>
+
+<script src="https://cdn2.hexlet.io/assets/runtime-99f5075a93020b34dbd0c8f4efe6e8507c46f41c561a08f63a58ab84774a3cd3.js" crossorigin="anonymous" defer="defer"></script><script src="https://cdn2.hexlet.io/assets/sprockets-63b9990952baa779eff210638ed2219ed09dc4c0c14b5235aefe392d249457d6.js" crossorigin="anonymous" defer="defer"></script><script src="https://cdn2.hexlet.io/assets/routes-d00c53eb00104d6a0c606f529d21778bde6f5911e590674fbfe0b1c7de12afad.js" crossorigin="anonymous" defer="defer"></script><script src="https://cdn2.hexlet.io/assets/vendors-bd4300de99399f3fef7071ac3fd7295ff5de8f663bf5f07553fee334efbfc5e7.js" crossorigin="anonymous" defer="defer" data-turbo-track="reload"></script><script src="https://cdn2.hexlet.io/assets/locales-ac72f61f6b21d00e9d455c7d88994f1603ecedd811b30794410907dc7b8b3e68.js" crossorigin="anonymous" defer="defer"></script><script src="https://cdn2.hexlet.io/assets/i18n-32668ddeb17e31f68e149338348bc8bdb6e72f176074dd25cb8275ee16b54362.js" crossorigin="anonymous" defer="defer"></script><script src="https://cdn2.hexlet.io/assets/markdown-282fa3e346904a6d883a2f108c1e15ad0832ff7565f00a99f0b9f7f231755965.js" crossorigin="anonymous" defer="defer"></script><script src="https://cdn2.hexlet.io/assets/reactEssentials-8ae32d9a01fcd5b231e7338bf3cdf798a4e56bba2346edc77a2c4919e5d86709.js" crossorigin="anonymous" defer="defer"></script><script src="https://cdn2.hexlet.io/assets/reactRelated-c333945046f3800f8091cae49adf85ad0c574dc12c48aeb2c571936239b6278b.js" crossorigin="anonymous" defer="defer"></script><script src="https://cdn2.hexlet.io/assets/application-1ea6ec287b1e70594583307c2fa8b56a24d75a697c4400c6c7a7e3e939f97e58.js" crossorigin="anonymous" defer="defer" data-turbo-track="reload"></script><script src="https://cdn2.hexlet.io/assets/community-409720ec824f38f5e00ebff0a73fbe69368c70a6edbf3c854d35684acbb05d0e.js" crossorigin="anonymous" defer="defer"></script><script src="https://cdn2.hexlet.io/assets/tota_ai-81fe41dca7189b689d05488025b5943ec1a0f359ede02705ee031bb8c3c9bd5f.js" crossorigin="anonymous" defer="defer"></script><script src="https://cdn2.hexlet.io/assets/challenge-0e557efb96df9a8ec932f1619fc1dbf2b5325133588ccacad38a6701ce556d38.js" crossorigin="anonymous" defer="defer"></script>
+
+<meta content='max-age=0' http-equiv='cache-control'>
+<meta content='no-cache' http-equiv='cache-control'>
+<meta content='0' http-equiv='expires'>
+<meta content='Tue, 01 Jan 1980 1:00:00 GMT' http-equiv='expires'>
+<meta content='no-cache' http-equiv='pragma'>
+</head>
+<body class='h-100'>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK88TH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<div class='d-flex flex-column flex-md-row h-100'>
+<div class='border-end flex-fill tab-content overflow-hidden h-100'>
+<div aria-labelledby='lesson-tab' class='tab-pane fade show active hexlet-exercise-tab h-100' id='lesson' role='tabpanel'>
+<div class='d-flex flex-fill' id='hexlet-challenge-ide'></div>
+</div>
+<div aria-labelledby='community-tab' class='tab-pane fade overflow-auto h-100 position-relative' id='community' role='tabpanel'>
+<div class='container-xl my-3 mb-md-4 mb-lg-5'>
+<div class='row justify-content-center'>
+<div class='col-12 col-lg-10 col-xl-9 col-xxl-8'>
+<div id='community-box'></div>
+
+</div>
+</div>
+</div>
+</div>
+<div aria-labelledby='theory-tab' class='tab-pane fade overflow-auto h-100 position-relative' id='theory' role='tabpanel'>
+<div class='container-xl my-3 mb-md-4 mb-lg-5'>
+<div class='row justify-content-center'>
+<div class='col-12 col-lg-10 col-xl-9 col-xxl-8'>
+<div class='mt-3'>
+<article class='hexlet-typography overflow-hidden'>
+<div class='mb-4 position-relative d-inline-block'>
+<h1 class='my-0 d-flex flex-column-reverse'>
+Агрегация данных
+<span class='visually-hidden'>—</span>
+<span class='h6 mb-0 fw-normal text-body-secondary'>Основы JavaScript</span>
+</h1>
+<a class="stretched-link" aria-label="Основы JavaScript" href="/courses/js-basics"></a>
+</div>
+<!-- source_path[33063/340-aggregation/README.md] -->  
+<ul><li><a class="link-body-emphasis" href="#chisla">Числа</a></li>
+<li><a class="link-body-emphasis" href="#stroki">Строки</a></li></ul><p><img src="https://cdn2.hexlet.io/derivations/image/original/eyJpZCI6ImMzZTI5YjRjODNlYjk0YmMxODgxYTM0MjRiNGM2ZjMyLnBuZyIsInN0b3JhZ2UiOiJjYWNoZSJ9?signature=349ec50c9982456b9b7cf936814222c4a12b277b8013da33f2896072091cd137" title="" alt="Итерации цикла" fetchpriority="high" class="px-2 px-md-3 px-lg-4 px-xl-5 img-fluid" loading="eager"></p><p>Отдельный класс задач, который не может обойтись без циклов, называется агрегированием данных. К таким задачам относятся поиск максимального, минимального, суммы, среднего арифметического и т.п. Их главная особенность в том, что результат зависит от всего набора данных. Для расчета суммы нужно сложить <strong>все</strong> числа, для вычисления максимального нужно сравнить <strong>все</strong> числа.</p><p>С такими задачами хорошо знакомы все, кто занимаются числами, например бухгалтеры или маркетологи. Обычно их выполняют в таблицах наподобие Microsoft Excel или Google Spreadsheets.</p><h2 id="chisla">Числа</h2><p>Разберем самый простой пример – поиск суммы набора чисел. Реализуем функцию, которая складывает числа в указанном диапазоне, включая границы. Диапазоном в данном случае называется ряд чисел от какого-то начала до определенного конца. Например, диапазон [1, 10] включает в себя все целые числа от 1 до 10.</p><div class="position-relative x-btn-hover-visible-wrapper">
+  <pre class="hljs"><code class=javascript><span style="">sumNumbersFromRange</span><span style="">(</span><span style="color: #009999">5</span><span style="">,</span> <span style="color: #009999">7</span><span style="">);</span> <span style="color: #999988;font-style: italic">// 5 + 6 + 7 = 18</span>
+<span style="">sumNumbersFromRange</span><span style="">(</span><span style="color: #009999">1</span><span style="">,</span> <span style="color: #009999">2</span><span style="">);</span> <span style="color: #999988;font-style: italic">// 1 + 2 = 3</span>
+
+<span style="color: #999988;font-style: italic">// [1, 1] диапазон с одинаковым началом и концом – тоже диапазон</span>
+<span style="color: #999988;font-style: italic">// он в себя включает ровно одно число – саму границу диапазона</span>
+<span style="">sumNumbersFromRange</span><span style="">(</span><span style="color: #009999">1</span><span style="">,</span> <span style="color: #009999">1</span><span style="">);</span> <span style="color: #999988;font-style: italic">// 1</span>
+<span style="">sumNumbersFromRange</span><span style="">(</span><span style="color: #009999">100</span><span style="">,</span> <span style="color: #009999">100</span><span style="">);</span> <span style="color: #999988;font-style: italic">// 100</span>
+</code></pre>
+  <form data-turbo="true" data-turbo-frame="tota_ai_explanation" method="get" action="">
+    <input type="hidden" name="tota_ai[action]" value="explain_code">
+    <input type="hidden" name="tota_ai[content]" value="sumNumbersFromRange(5, 7); &#x2F;&#x2F; 5 + 6 + 7 = 18
+sumNumbersFromRange(1, 2); &#x2F;&#x2F; 1 + 2 = 3
+
+&#x2F;&#x2F; [1, 1] диапазон с одинаковым началом и концом – тоже диапазон
+&#x2F;&#x2F; он в себя включает ровно одно число – саму границу диапазона
+sumNumbersFromRange(1, 1); &#x2F;&#x2F; 1
+sumNumbersFromRange(100, 100); &#x2F;&#x2F; 100
+">
+    <input type="hidden" name="tota_ai[language]" value="javascript">
+    <button type="submit" class="me-2 mt-2 end-0 top-0 position-absolute btn btn-secondary btn-sm x-btn-hover-visible text-center" style="width: 105px">
+      <div class="spinner-border spinner-border-sm d-none" data-tota-ai-role="loading"></div>
+      <span data-tota-ai-role="content">Объясни код</span>
+    </button>
+  </form>
+</div>
+<p>Для реализации этого кода нам понадобится цикл, так как сложение чисел – это итеративный процесс (он повторяется для каждого числа), а количество итераций зависит от размера диапазона. Перед тем, как смотреть код, попробуйте ответить на вопросы ниже:</p>
+<ul>
+<li>Каким значением инициализировать счетчик?</li>
+<li>Как он будет изменяться?</li>
+<li>Когда цикл должен остановиться?</li>
+</ul>
+<p>Попробуйте сначала подумать над этими вопросами, а затем посмотрите код ниже:</p><div class="position-relative x-btn-hover-visible-wrapper">
+  <pre class="hljs"><code class=javascript><span style="color: #000000;font-weight: bold">const</span> <span style="">sumNumbersFromRange</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">(</span><span style="">start</span><span style="">,</span> <span style="">finish</span><span style="">)</span> <span style="color: #000000;font-weight: bold">=&gt;</span> <span style="">{</span>
+  <span style="color: #999988;font-style: italic">// Технически можно менять start</span>
+  <span style="color: #999988;font-style: italic">// Но входные аргументы нужно оставлять в исходном значении</span>
+  <span style="color: #999988;font-style: italic">// Это сделает код проще для анализа</span>
+  <span style="color: #000000;font-weight: bold">let</span> <span style="">i</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">start</span><span style="">;</span>
+  <span style="color: #000000;font-weight: bold">let</span> <span style="">sum</span> <span style="color: #000000;font-weight: bold">=</span> <span style="color: #009999">0</span><span style="">;</span> <span style="color: #999988;font-style: italic">// Инициализация суммы</span>
+
+  <span style="color: #000000;font-weight: bold">while</span> <span style="">(</span><span style="">i</span> <span style="color: #000000;font-weight: bold">&lt;=</span> <span style="">finish</span><span style="">)</span> <span style="">{</span> <span style="color: #999988;font-style: italic">// Двигаемся до конца диапазона</span>
+    <span style="">sum</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">sum</span> <span style="color: #000000;font-weight: bold">+</span> <span style="">i</span><span style="">;</span> <span style="color: #999988;font-style: italic">// Считаем сумму для каждого числа</span>
+    <span style="">i</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">i</span> <span style="color: #000000;font-weight: bold">+</span> <span style="color: #009999">1</span><span style="">;</span> <span style="color: #999988;font-style: italic">// Переходим к следующему числу в диапазоне</span>
+  <span style="">}</span>
+
+  <span style="color: #999988;font-style: italic">// Возвращаем получившийся результат</span>
+  <span style="color: #000000;font-weight: bold">return</span> <span style="">sum</span><span style="">;</span>
+<span style="">};</span>
+</code></pre>
+  <form data-turbo="true" data-turbo-frame="tota_ai_explanation" method="get" action="">
+    <input type="hidden" name="tota_ai[action]" value="explain_code">
+    <input type="hidden" name="tota_ai[content]" value="const sumNumbersFromRange = (start, finish) =&gt; {
+  &#x2F;&#x2F; Технически можно менять start
+  &#x2F;&#x2F; Но входные аргументы нужно оставлять в исходном значении
+  &#x2F;&#x2F; Это сделает код проще для анализа
+  let i = start;
+  let sum = 0; &#x2F;&#x2F; Инициализация суммы
+
+  while (i &lt;= finish) { &#x2F;&#x2F; Двигаемся до конца диапазона
+    sum = sum + i; &#x2F;&#x2F; Считаем сумму для каждого числа
+    i = i + 1; &#x2F;&#x2F; Переходим к следующему числу в диапазоне
+  }
+
+  &#x2F;&#x2F; Возвращаем получившийся результат
+  return sum;
+};
+">
+    <input type="hidden" name="tota_ai[language]" value="javascript">
+    <button type="submit" class="me-2 mt-2 end-0 top-0 position-absolute btn btn-secondary btn-sm x-btn-hover-visible text-center" style="width: 105px">
+      <div class="spinner-border spinner-border-sm d-none" data-tota-ai-role="loading"></div>
+      <span data-tota-ai-role="content">Объясни код</span>
+    </button>
+  </form>
+</div>
+<p>Общая структура цикла здесь стандартна. Есть счетчик, который инициализируется начальным значением диапазона, есть сам цикл с условием остановки при достижении конца диапазона, и, наконец, изменение счетчика в конце тела цикла. Количество итераций в таком цикле равно <code>finish - start + 1</code>. То есть для диапазона от 5 до 7 – это 7 - 5 + 1, то есть 3 итерации.</p><p>Главные отличия от обычной обработки связаны с логикой вычислений результата. В задачах на агрегацию всегда есть какая-то переменная, которая хранит внутри себя результат работы цикла. В коде выше это <code>sum</code>. На каждой итерации цикла происходит ее изменение, прибавление следующего числа в диапазоне: <code>sum = sum + i</code>. Весь процесс выглядит так:</p><div class="position-relative x-btn-hover-visible-wrapper">
+  <pre class="hljs"><code class=javascript><span style="color: #999988;font-style: italic">// Для вызова sumNumbersFromRange(2, 5);</span>
+<span style="color: #000000;font-weight: bold">let</span> <span style="">sum</span> <span style="color: #000000;font-weight: bold">=</span> <span style="color: #009999">0</span><span style="">;</span>
+<span style="">sum</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">sum</span> <span style="color: #000000;font-weight: bold">+</span> <span style="color: #009999">2</span><span style="">;</span> <span style="color: #999988;font-style: italic">// 2</span>
+<span style="">sum</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">sum</span> <span style="color: #000000;font-weight: bold">+</span> <span style="color: #009999">3</span><span style="">;</span> <span style="color: #999988;font-style: italic">// 5</span>
+<span style="">sum</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">sum</span> <span style="color: #000000;font-weight: bold">+</span> <span style="color: #009999">4</span><span style="">;</span> <span style="color: #999988;font-style: italic">// 9</span>
+<span style="">sum</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">sum</span> <span style="color: #000000;font-weight: bold">+</span> <span style="color: #009999">5</span><span style="">;</span> <span style="color: #999988;font-style: italic">// 14</span>
+<span style="color: #999988;font-style: italic">// 14 – результат сложения чисел в диапазоне [2, 5]</span>
+</code></pre>
+  <form data-turbo="true" data-turbo-frame="tota_ai_explanation" method="get" action="">
+    <input type="hidden" name="tota_ai[action]" value="explain_code">
+    <input type="hidden" name="tota_ai[content]" value="&#x2F;&#x2F; Для вызова sumNumbersFromRange(2, 5);
+let sum = 0;
+sum = sum + 2; &#x2F;&#x2F; 2
+sum = sum + 3; &#x2F;&#x2F; 5
+sum = sum + 4; &#x2F;&#x2F; 9
+sum = sum + 5; &#x2F;&#x2F; 14
+&#x2F;&#x2F; 14 – результат сложения чисел в диапазоне [2, 5]
+">
+    <input type="hidden" name="tota_ai[language]" value="javascript">
+    <button type="submit" class="me-2 mt-2 end-0 top-0 position-absolute btn btn-secondary btn-sm x-btn-hover-visible text-center" style="width: 105px">
+      <div class="spinner-border spinner-border-sm d-none" data-tota-ai-role="loading"></div>
+      <span data-tota-ai-role="content">Объясни код</span>
+    </button>
+  </form>
+</div>
+<p>У переменной <code>sum</code> есть начальное значение, равное 0. Зачем вообще задавать значение? Любая повторяющаяся операция начинается с какого-то значения. Нельзя просто так объявить переменную и начать с ней работать внутри цикла. Это приведет к неверному результату:</p><div class="position-relative x-btn-hover-visible-wrapper">
+  <pre class="hljs"><code class=javascript><span style="color: #999988;font-style: italic">// начальное значение не задано</span>
+<span style="color: #999988;font-style: italic">// js автоматически делает его равным undefined</span>
+<span style="color: #000000;font-weight: bold">let</span> <span style="">sum</span><span style="">;</span>
+
+<span style="color: #999988;font-style: italic">// первая итерация цикла</span>
+<span style="">sum</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">sum</span> <span style="color: #000000;font-weight: bold">+</span> <span style="color: #009999">2</span><span style="">;</span> <span style="color: #999988;font-style: italic">// ?</span>
+</code></pre>
+  <form data-turbo="true" data-turbo-frame="tota_ai_explanation" method="get" action="">
+    <input type="hidden" name="tota_ai[action]" value="explain_code">
+    <input type="hidden" name="tota_ai[content]" value="&#x2F;&#x2F; начальное значение не задано
+&#x2F;&#x2F; js автоматически делает его равным undefined
+let sum;
+
+&#x2F;&#x2F; первая итерация цикла
+sum = sum + 2; &#x2F;&#x2F; ?
+">
+    <input type="hidden" name="tota_ai[language]" value="javascript">
+    <button type="submit" class="me-2 mt-2 end-0 top-0 position-absolute btn btn-secondary btn-sm x-btn-hover-visible text-center" style="width: 105px">
+      <div class="spinner-border spinner-border-sm d-none" data-tota-ai-role="loading"></div>
+      <span data-tota-ai-role="content">Объясни код</span>
+    </button>
+  </form>
+</div>
+<p>В результате такого вызова внутри <code>sum</code> окажется <code>NaN</code>, то есть не-число. Оно возникает из-за попытки сложить <code>2</code> и <code>undefined</code>. Значит какое-то значение все же нужно. Почему в коде выше выбран 0? Очень легко проверить, что все остальные варианты приведут к неверному результату. Если начальное значение будет равно 1, то результат получится на 1 больше, чем нужно.</p><p>В математике существует понятие <strong>нейтральный элемент операции</strong> (у каждой операции свой элемент). Это понятие имеет очень простой смысл. Операция с этим элементом не изменяет то значение, над которым проводится операция. В сложении любое число плюс ноль дает само число. При вычитании – то же самое. Даже у конкатенации есть нейтральный элемент – это пустая строка: <code>&#39;&#39; + &#39;one&#39;</code> будет &#39;one&#39;.</p><p>Вопрос на самопроверку. Какой нейтральный элемент у операции умножения? Для ответа на этот вопрос найдите число, которое не меняет любые другие числа при умножении на него.</p><h2 id="stroki">Строки</h2><p>Агрегация применяется не только к числам, но и к строкам. Это такие задачи, в которых строка формируется динамически, то есть заранее неизвестно, какого она размера и что будет содержать.</p><p>Представьте себе функцию, которая умеет «умножать» строку, то есть она повторяет ее указанное количество раз:</p><div class="position-relative x-btn-hover-visible-wrapper">
+  <pre class="hljs"><code class=javascript><span style="">repeat</span><span style="">(</span><span style="color: #d14">'</span><span style="color: #d14">hexlet</span><span style="color: #d14">'</span><span style="">,</span> <span style="color: #009999">3</span><span style="">);</span> <span style="color: #999988;font-style: italic">// 'hexlethexlethexlet'</span>
+</code></pre>
+  <form data-turbo="true" data-turbo-frame="tota_ai_explanation" method="get" action="">
+    <input type="hidden" name="tota_ai[action]" value="explain_code">
+    <input type="hidden" name="tota_ai[content]" value="repeat(&#x27;hexlet&#x27;, 3); &#x2F;&#x2F; &#x27;hexlethexlethexlet&#x27;
+">
+    <input type="hidden" name="tota_ai[language]" value="javascript">
+    <button type="submit" class="me-2 mt-2 end-0 top-0 position-absolute btn btn-secondary btn-sm x-btn-hover-visible text-center" style="width: 105px">
+      <div class="spinner-border spinner-border-sm d-none" data-tota-ai-role="loading"></div>
+      <span data-tota-ai-role="content">Объясни код</span>
+    </button>
+  </form>
+</div>
+<p>Принцип работы этой функции довольно простой: в цикле происходит «наращивание» строки указанное количество раз:</p><div class="position-relative x-btn-hover-visible-wrapper">
+  <pre class="hljs"><code class=javascript><span style="color: #000000;font-weight: bold">const</span> <span style="">repeat</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">(</span><span style="">text</span><span style="">,</span> <span style="">times</span><span style="">)</span> <span style="color: #000000;font-weight: bold">=&gt;</span> <span style="">{</span>
+  <span style="color: #999988;font-style: italic">// Нейтральный элемент для строк – пустая строка</span>
+  <span style="color: #000000;font-weight: bold">let</span> <span style="">result</span> <span style="color: #000000;font-weight: bold">=</span> <span style="color: #d14">''</span><span style="">;</span>
+  <span style="color: #000000;font-weight: bold">let</span> <span style="">i</span> <span style="color: #000000;font-weight: bold">=</span> <span style="color: #009999">1</span><span style="">;</span>
+
+  <span style="color: #000000;font-weight: bold">while</span> <span style="">(</span><span style="">i</span> <span style="color: #000000;font-weight: bold">&lt;=</span> <span style="">times</span><span style="">)</span> <span style="">{</span>
+    <span style="color: #999988;font-style: italic">// Каждый раз добавляем строку к результату</span>
+    <span style="">result</span> <span style="color: #000000;font-weight: bold">=</span> <span style="color: #d14">`</span><span style="">${</span><span style="">result</span><span style="">}${</span><span style="">text</span><span style="">}</span><span style="color: #d14">`</span><span style="">;</span>
+    <span style="">i</span> <span style="color: #000000;font-weight: bold">=</span> <span style="">i</span> <span style="color: #000000;font-weight: bold">+</span> <span style="color: #009999">1</span><span style="">;</span>
+  <span style="">}</span>
+
+  <span style="color: #000000;font-weight: bold">return</span> <span style="">result</span><span style="">;</span>
+<span style="">};</span>
+</code></pre>
+  <form data-turbo="true" data-turbo-frame="tota_ai_explanation" method="get" action="">
+    <input type="hidden" name="tota_ai[action]" value="explain_code">
+    <input type="hidden" name="tota_ai[content]" value="const repeat = (text, times) =&gt; {
+  &#x2F;&#x2F; Нейтральный элемент для строк – пустая строка
+  let result = &#x27;&#x27;;
+  let i = 1;
+
+  while (i &lt;= times) {
+    &#x2F;&#x2F; Каждый раз добавляем строку к результату
+    result = `${result}${text}`;
+    i = i + 1;
+  }
+
+  return result;
+};
+">
+    <input type="hidden" name="tota_ai[language]" value="javascript">
+    <button type="submit" class="me-2 mt-2 end-0 top-0 position-absolute btn btn-secondary btn-sm x-btn-hover-visible text-center" style="width: 105px">
+      <div class="spinner-border spinner-border-sm d-none" data-tota-ai-role="loading"></div>
+      <span data-tota-ai-role="content">Объясни код</span>
+    </button>
+  </form>
+</div>
+<p><span data-link="https://replit.com/@hexlet/js-basics-aggreagation" data-target="_blank" data-controller="hidden-link" data-action="mouseup-&gt;hidden-link#click" class="  x-hidden-link" role="button">https://replit.com/@hexlet/js-basics-aggreagation</span></p><p>Распишем выполнение этого кода по шагам:</p><div class="position-relative x-btn-hover-visible-wrapper">
+  <pre class="hljs"><code class=javascript><span style="color: #999988;font-style: italic">// Для вызова repeat('hexlet', 3);</span>
+<span style="color: #000000;font-weight: bold">let</span> <span style="">result</span> <span style="color: #000000;font-weight: bold">=</span> <span style="color: #d14">''</span><span style="">;</span>
+<span style="">result</span> <span style="color: #000000;font-weight: bold">=</span> <span style="color: #d14">`</span><span style="">${</span><span style="">result</span><span style="">}</span><span style="color: #d14">hexlet`</span><span style="">;</span> <span style="color: #999988;font-style: italic">// hexlet</span>
+<span style="">result</span> <span style="color: #000000;font-weight: bold">=</span> <span style="color: #d14">`</span><span style="">${</span><span style="">result</span><span style="">}</span><span style="color: #d14">hexlet`</span><span style="">;</span> <span style="color: #999988;font-style: italic">// hexlethexlet</span>
+<span style="">result</span> <span style="color: #000000;font-weight: bold">=</span> <span style="color: #d14">`</span><span style="">${</span><span style="">result</span><span style="">}</span><span style="color: #d14">hexlet`</span><span style="">;</span> <span style="color: #999988;font-style: italic">// hexlethexlethexlet</span>
+</code></pre>
+  <form data-turbo="true" data-turbo-frame="tota_ai_explanation" method="get" action="">
+    <input type="hidden" name="tota_ai[action]" value="explain_code">
+    <input type="hidden" name="tota_ai[content]" value="&#x2F;&#x2F; Для вызова repeat(&#x27;hexlet&#x27;, 3);
+let result = &#x27;&#x27;;
+result = `${result}hexlet`; &#x2F;&#x2F; hexlet
+result = `${result}hexlet`; &#x2F;&#x2F; hexlethexlet
+result = `${result}hexlet`; &#x2F;&#x2F; hexlethexlethexlet
+">
+    <input type="hidden" name="tota_ai[language]" value="javascript">
+    <button type="submit" class="me-2 mt-2 end-0 top-0 position-absolute btn btn-secondary btn-sm x-btn-hover-visible text-center" style="width: 105px">
+      <div class="spinner-border spinner-border-sm d-none" data-tota-ai-role="loading"></div>
+      <span data-tota-ai-role="content">Объясни код</span>
+    </button>
+  </form>
+</div>
+
+<div class='d-print-none'>
+<hr class='mt-5'>
+<div class='d-flex flex-nowrap mt-md-4 pt-lg-2 align-items-start'>
+<div class='me-3 flex-shrink-0 d-none d-sm-block'>
+<img width="185" height="45" alt="Аватары экспертов Хекслета" src="https://cdn2.hexlet.io/assets/faces/mentors-828ca6c66fdd5ff38fbd04a5ed1645fb51a33e8fb2579504d71d79e798c8684f.png" loading="lazy" />
+</div>
+<div class='w-100'>
+<h2 class='h6 fw-bold mb-0 lh-base'>Остались вопросы? Задайте их в разделе «<a href="https://help.hexlet.ru/article/65237" target="_blank" class="text-decoration-none">Обсуждение</a>»</h2>
+<p class='fs-6 mb-0'>Вам ответят команда поддержки Хекслета или другие студенты</p>
+</div>
+</div>
+<div class='mt-4'>
+<div class='h6 fw-bold mb-2'>Об обучении на Хекслете</div>
+<div class='fs-6'>
+<ul>
+<li>Статья «<a href="https://guides.hexlet.io/ru/learning" target="_blank">Как учиться и справляться с негативными мыслями</a>»</li>
+<li>Статья «<a href="https://ru.hexlet.io/blog/posts/traps-learning" target="_blank">Ловушки обучения</a>»</li>
+<li>Статья «<a href="https://ru.hexlet.io/blog/posts/slozhnye-prostye-zadachi-po-programmirovaniyu" target="_blank">Сложные простые задачи по программированию</a>»</li>
+<li>Вебинар «<a href="https://www.youtube.com/watch?v=dCYZppVgGww" target="_blank">Как самостоятельно учиться</a>»</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+</article>
+<div class='mt-3 d-none d-md-flex'>
+<div class='ms-auto'>
+<form class="button_to" method="post" action="/courses/js-basics/lessons/aggregation/finish_unit?unit=theory"><input type="hidden" name="_method" value="patch" autocomplete="off" /><button data-html="true" data-disable-with="<span class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;></span><span class=&quot;d-none d-md-inline&quot;>&nbsp;Подождите...</span>
+" aria-expanded="false" class="btn btn-outline-primary btn-lg d-flex align-items-center" id="finish-theory-button" type="submit"><span class='me-3'>Далее</span>
+<span class='bi bi-arrow-right'></span>
+</button><input type="hidden" name="authenticity_token" value="cqsdRdZBlGVcCr61CbRhOT9fX4KQ5GtgQp1ivrdH65puVTAlT5G_47IgZOUCfXGRSqA3ot2TFcQaopEqljz-pQ" autocomplete="off" /></form></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='hexlet-lesson-sidebar flex-shrink-0 overflow-auto'>
+<div class='row g-0 flex-fill'>
+<div class='col-auto d-md-none'>
+<button class='btn btn-secondary btn-lg rounded-0' data-bs-target='#exercise-external-content' data-bs-toggle='collapse'>
+<span class='bi bi-list-ul'></span>
+<span class='visually-hidden'>Меню</span>
+</button>
+</div>
+<div class='col col-md-12 overflow-hidden'>
+<div id='hexlet-ide-control-menu'></div>
+</div>
+<div class='col-12 d-md-block collapse' id='exercise-external-content'>
+<div class='d-flex flex-wrap h-100'>
+<div class='d-none d-md-flex align-items-center w-100 border-top'>
+<a class="btn btn-link btn-lg hexlet-base-nav-item rounded-0 text-body border-end" title="Мое обучение" href="/my"><span class='bi bi-house-door'></span>
+</a><a data-bs-toggle="modal" data-bs-target="#coursenav-modal" class="btn btn-link text-body w-100 btn-lg border-left hexlet-base-nav-item text-decoration-none rounded-0" href="#coursenav-modal"><span class='small'>Навигация</span>
+</a></div>
+<div class='px-2 py-3 w-100 border-top d-none d-md-block'>
+<span class='d-none d-sm-block small text-center mb-2'>
+пройдено 33 урока из 39
+</span>
+<div class='px-1'>
+<div class='progress mb-1'>
+<div class='progress-bar m-0 bg-success' style='width: 85%'></div>
+</div>
+</div>
+</div>
+<ul class='nav flex-row-reverse flex-md-column nav-justified flex-fill border-top pt-md-2' role='tablist'>
+<li class='nav-item d-md-none'>
+<a class="nav-link text-body text-decoration-none h-100 d-flex justify-content-center align-items-center hexlet-base-nav-item" href="/my"><span class='bi bi-house-door'></span>
+</a></li>
+<li class='nav-item d-md-none'>
+<a data-bs-toggle="modal" data-bs-target="#coursenav-modal" class="nav-link text-body text-decoration-none h-100 d-flex justify-content-center align-items-center hexlet-base-nav-item" href="#coursenav-modal"><span class='bi bi-diagram-3-fill'></span>
+</a></li>
+<li class='nav-item text-start'>
+<a class="nav-link active text-body hexlet-base-nav-item h-100 py-3 py-md-2 d-flex justify-content-center justify-content-md-start align-items-center h-100" role="tab" aria-controls="lesson" aria-selected="true" data-bs-toggle="tab" href="#lesson"><span class='d-none d-md-inline-block'>Упражнение</span>
+<span class='bi bi-code-slash d-md-none'></span>
+</a></li>
+<li class='nav-item text-start'>
+<a class="nav-link hexlet-base-nav-item h-100 py-3 py-md-2 text-body" role="tab" aria-controls="community" aria-selected="false" data-bs-toggle="tab" data-bs-target="#community" href="/courses/js-basics/lessons/aggregation/theory_unit#community"><span class='d-none d-md-inline-block'>Обсуждение</span>
+<span class='d-flex justify-content-center align-items-center h-100 d-md-none'>
+<span class='bi bi-chat'></span>
+</span>
+</a></li>
+<li class='nav-item text-start'>
+<a class="nav-link hexlet-base-nav-item h-100 py-3 py-md-2 text-body" role="tab" aria-controls="theory" aria-selected="false" data-bs-toggle="tab" data-bs-target="#theory" href="/courses/js-basics/lessons/aggregation/theory_unit"><span class='d-none d-md-inline-block'>Теория</span>
+<span class='d-flex justify-content-center align-items-center h-100 d-md-none'>
+<span class='bi bi-body-text'></span>
+</span>
+</a></li>
+<div class='d-none d-md-block mt-1 pt-1 border-top'></div>
+<li class='nav-item d-flex justify-content-center'>
+<form data-turbo="true" data-turbo-frame="tota_ai_explanation" class="button_to" method="get" action="/courses/js-basics/lessons/aggregation/exercise_unit"><button class="nav-link hexlet-base-nav-item h-100 py-1 py-md-2 btn btn-link text-body text-start" type="submit"><div class='spinner-border spinner-border-sm text-center d-none' data-tota-ai-role='loading'></div>
+<div data-tota-ai-role='content'>
+<span class='d-none d-md-inline-block'>Tota AI объяснит теорию</span>
+<span class='d-flex justify-content-center align-items-center h-100 d-md-none'>
+<span class='bi bi-file-earmark-text'></span>
+</span>
+</div>
+</button><input type="hidden" name="tota_ai[action]" value="explain_theory" autocomplete="off" /><input type="hidden" name="tota_ai[lesson_id]" value="2640" autocomplete="off" /></form></li>
+</ul>
+<div class='d-flex flex-md-column w-100 mt-md-3 px-md-2 order-first order-md-last'>
+<a class="btn bg-body-tertiary border py-3 py-md-2 mb-md-2 d-flex flex-fill align-items-center justify-content-center justify-content-md-start rounded-0" data-bs-toggle="modal" data-bs-target="#readme-modal" href="#readme-modal"><span class='bi bi-list-task'></span>
+<span class='d-none d-md-inline-block ms-2'>Задание</span>
+</a><a class="btn bg-body-tertiary border py-3 py-md-2 d-flex mb-md-2 flex-fill align-items-center justify-content-center justify-content-md-start rounded-0" data-confirm="ВНИМАНИЕ! Ваш код будет удален. Уверены, что хотите сбросить текущий прогресс и вернуть упражнение в начальное состояние?" data-bs-toggle="tooltip" title="Нажмите «Сброс», чтобы получить самую свежую версию упражнения." data-bs-placement="top" rel="nofollow" data-method="delete" href="/instances/7345112"><span class='bi bi-skip-backward-fill'></span>
+<span class='d-none d-md-inline-block ms-2'>Сброс</span>
+</a><span class='d-flex flex-fill mb-md-2' id='hexlet-challenge-solution'>
+<a class="btn bg-body-tertiary border py-3 py-md-2 d-flex flex-fill align-items-center justify-content-center justify-content-md-start rounded-0" href="#"><span class='bi bi-life-preserver'></span>
+<span class='d-none d-md-inline-block ms-2'>Подсказка</span>
+</a></span>
+<span class='d-none d-lg-flex flex-fill mb-md-2' id='hexlet-challenge-ide-guide'>
+<a class="btn bg-body-tertiary border py-3 py-md-2 d-flex flex-fill align-items-center justify-content-center justify-content-md-start rounded-0" href="#"><span class='bi bi-question-circle'></span>
+<span class='d-none d-md-inline-block ms-2'>Памятка</span>
+</a></span>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden='true' aria-labelledby='coursenav-modal' class='modal fade' id='coursenav-modal' role='dialog' tabindex='-1'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h6 class='modal-title'>
+<nav aria-label='breadcrumb' style='--bs-breadcrumb-divider: &#39;&gt;&#39;;'>
+<ol class='breadcrumb mb-0' itemscope='' itemtype='https://schema.org/BreadcrumbList'>
+<li class='breadcrumb-item' itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem'>
+<a class="text-decoration-none" itemprop="item" href="/"><span itemprop="name">Хекслет</span></a>
+<meta content='1' itemprop='position'>
+</li>
+<li class='breadcrumb-item' itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem'>
+<a class="text-decoration-none" itemprop="item" href="/courses/js-basics"><span itemprop="name">Основы JavaScript</span></a>
+<meta content='2' itemprop='position'>
+</li>
+<li class='breadcrumb-item' itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem'>
+<span itemprop="name">Агрегация данных</span>
+<meta content='3' itemprop='position'>
+</li>
+</ol>
+</nav>
+
+</h6>
+<button aria-label='Закрыть' class='btn-close' data-bs-dismiss='modal'></button>
+</div>
+<div class='modal-body scrollable px-4'>
+<div class='mb-3'>
+<span class=''>
+1.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/intro/theory_unit">Введение</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/intro/theory_unit">теория</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+2.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/hello-world/theory_unit">Hello, World!</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/hello-world/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/hello-world/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/hello-world/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+3.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/instructions/theory_unit">Инструкции</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/instructions/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/instructions/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/instructions/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+4.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/arithmetics/theory_unit">Арифметические операции</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/arithmetics/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/arithmetics/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/arithmetics/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+5.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/errors/theory_unit">Ошибки оформления (синтаксиса и линтера)</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/errors/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/errors/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/errors/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+6.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/strings/theory_unit">Строки</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/strings/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/strings/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/strings/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+7.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variables/theory_unit">Переменные</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variables/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variables/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variables/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+8.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variables-expression/theory_unit">Выражения в определениях</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variables-expression/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variables-expression/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variables-expression/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+9.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/naming/theory_unit">Именование</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/naming/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/naming/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/naming/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+10.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/interpolation/theory_unit">Интерполяция</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/interpolation/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/interpolation/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/interpolation/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+11.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/symbols/theory_unit">Извлечение символов из строки</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/symbols/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/symbols/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/symbols/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+12.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/data-types/theory_unit">Типы данных</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/data-types/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/data-types/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/data-types/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+13.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/immutability-of-primitive-types/theory_unit">Неизменяемость и примитивные типы</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/immutability-of-primitive-types/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/immutability-of-primitive-types/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/immutability-of-primitive-types/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+14.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/calling-functions/theory_unit">Функции и их вызов</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/calling-functions/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/calling-functions/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/calling-functions/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+15.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/signature/theory_unit">Сигнатура функции</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/signature/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/signature/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/signature/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+16.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/call-function-expression/theory_unit">Вызов функции — выражение</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/call-function-expression/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/call-function-expression/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/call-function-expression/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+17.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variadic-parameters/theory_unit">Функции с переменным числом параметров</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variadic-parameters/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variadic-parameters/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/variadic-parameters/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+18.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/deterministic/theory_unit">Детерминированность</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/deterministic/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/deterministic/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/deterministic/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+19.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/stdlib/theory_unit">Стандартная библиотека</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/stdlib/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/stdlib/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/stdlib/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+20.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/properties-methods/theory_unit">Свойства и методы</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/properties-methods/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/properties-methods/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/properties-methods/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+21.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/methods-chain/theory_unit">Цепочка вызовов</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/methods-chain/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/methods-chain/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/methods-chain/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+22.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-define/theory_unit">Определение функций</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-define/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-define/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-define/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+23.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-return/theory_unit">Возврат значений</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-return/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-return/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-return/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+24.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-parameters/theory_unit">Параметры функций</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-parameters/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-parameters/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-parameters/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+25.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-default-parameters/theory_unit">Необязательные параметры функций</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-default-parameters/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-default-parameters/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-default-parameters/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+26.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-short-syntax/theory_unit">Упрощенный синтаксис функций</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-short-syntax/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-short-syntax/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/functions-short-syntax/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+27.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-operations/theory_unit">Логика</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-operations/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-operations/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-operations/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+28.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-operators/theory_unit">Логические операторы</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-operators/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-operators/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-operators/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+29.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-expressions/theory_unit">Результат логических операций</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-expressions/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-expressions/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/logical-expressions/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+30.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/conditionals/theory_unit">Условные конструкции</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/conditionals/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/conditionals/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/conditionals/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+31.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/ternary-operator/theory_unit">Тернарный оператор</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/ternary-operator/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/ternary-operator/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/ternary-operator/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+32.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/switch/theory_unit">Конструкция Switch</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/switch/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/switch/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/switch/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+33.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/while/theory_unit">Цикл while</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/while/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/while/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/while/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class='fw-bolder'>
+34.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/aggregation/theory_unit">Агрегация данных</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/aggregation/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/aggregation/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='fw-bolder'>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/aggregation/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+35.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/iteration-over-strings/theory_unit">Обход строк в цикле</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/iteration-over-strings/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/iteration-over-strings/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/iteration-over-strings/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+36.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/conditions-inside-loops/theory_unit">Условия внутри тела цикла</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/conditions-inside-loops/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/conditions-inside-loops/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/conditions-inside-loops/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+37.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/mutators/theory_unit">Инкремент и декремент</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/mutators/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/mutators/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/mutators/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+38.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/for/theory_unit">Цикл for</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/for/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/for/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/for/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+39.
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/modules/theory_unit">Модули</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/modules/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/modules/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/js-basics/lessons/modules/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='h6 fs-5 mt-4 mb-3'>Испытания</div>
+<div class='mb-3'>
+1.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/js_basics_happy_ticket_exercise">Счастливый билет</a>
+</span>
+</div>
+<div class='mb-3'>
+2.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/js_basics_invert_case_exercise">Инвертированный регистр</a>
+</span>
+</div>
+<div class='mb-3'>
+3.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/js_basics_happy_numbers_exercise">Счастливые числа</a>
+</span>
+</div>
+<div class='mb-3'>
+4.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/js_basics_fib_exercise">Фибоначчи</a>
+</span>
+</div>
+<div class='mb-3'>
+5.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/js_basics_reexport_exercise">Фасад</a>
+</span>
+</div>
+<div class='mb-3'>
+6.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/js_basics_perfect_numbers_exercise">Идеальные числа</a>
+</span>
+</div>
+<div class='mb-3'>
+7.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/js_basics_reverse_integer_exercise">Переворот числа</a>
+</span>
+</div>
+<div class='mb-3'>
+8.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/js_basics_fizzbuzz_exercise">Найди Fizz и Buzz</a>
+</span>
+</div>
+</div>
+<div class='modal-footer'>
+<button class='btn btn-outline-info' data-bs-dismiss='modal'>Закрыть</button>
+</div>
+</div>
+</div>
+</div>
+
+<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal fade' id='readme-modal' role='dialog'>
+<div class='modal-dialog modal-lg'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h4 class='modal-title'>Задание</h4>
+<button aria-label='Close' class='btn-close' data-bs-dismiss='modal'></button>
+</div>
+<div class='modal-body scrollable'>
+<h2 id="joinnumbersfromrange-js">joinNumbersFromRange.js</h2><p>Реализуйте функцию <code>joinNumbersFromRange()</code>, которая объединяет все числа из диапазона в строку и возвращает её:</p><pre class="hljs"><code class=javascript><span style="">joinNumbersFromRange</span><span style="">(</span><span style="color: #009999">1</span><span style="">,</span> <span style="color: #009999">1</span><span style="">);</span> <span style="color: #999988;font-style: italic">// '1'</span>
+<span style="">joinNumbersFromRange</span><span style="">(</span><span style="color: #009999">2</span><span style="">,</span> <span style="color: #009999">3</span><span style="">);</span> <span style="color: #999988;font-style: italic">// '23'</span>
+<span style="">joinNumbersFromRange</span><span style="">(</span><span style="color: #009999">5</span><span style="">,</span> <span style="color: #009999">10</span><span style="">);</span> <span style="color: #999988;font-style: italic">// '5678910'</span>
+</code></pre>
+<div class='alert alert-info'>
+<span class="big">91%</span> пользователей решило эту задачу самостоятельно
+</div>
+</div>
+<div class='modal-footer'>
+<button class='btn btn-outline-info' data-bs-dismiss='modal'>Закрыть</button>
+</div>
+</div>
+</div>
+</div>
+
+<turbo-frame id="tota_ai_explanation"><div class='modal hexlet-tota-ai-modal'>
+<div class='modal-dialog modal-lg'>
+<div class='modal-content'>
+<div class='modal-header align-items-start'>
+<div class='d-flex align-items-center'>
+<img width="60" height="60" class="img-fluid bg-primary rounded-circle me-3" alt="<span class=&quot;translation_missing&quot; title=&quot;translation missing: ru.web.shared.tota_ai.modal.title&quot;>Title</span>" src="https://cdn2.hexlet.io/assets/team/you-eed9946a8d9b8b27742d12c4a54772070fa57d9589386c6c2391d3bcc0922ff4.png" loading="lazy" />
+<div>
+<h4 class='modal-title lh-sm'>Tota AI</h4>
+<div class='small text-secondary light'>Помощник на основе ChatGPT</div>
+</div>
+</div>
+<button aria-label='close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
+</div>
+<div class='modal-body bg-body-tertiary'>
+</div>
+<div class='modal-footer'>
+<button class='btn btn-primary px-4' data-bs-dismiss='modal' type='button'>Закрыть</button>
+</div>
+</div>
+</div>
+</div>
+</turbo-frame>
+
+
+
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"8722f5af8827b71f","version":"2024.3.0","token":"d11015b65d11429ea6b4a2ef37dd7e0b"}' crossorigin="anonymous"></script>
+</body>
+</html>
